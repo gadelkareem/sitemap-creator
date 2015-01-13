@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerDocumentInfoQueue</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerDocumentInfoQueue</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Queue for PHPCrawlerDocumentInfo-objects</p>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---ProcessCommunication---PHPCrawlerDocumentInfoQueue.class.php.html">/libs/PHPCrawler/ProcessCommunication/PHPCrawlerDocumentInfoQueue.class.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$PDO" title="details" class="var-name">$PDO</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$prepared_statements_created" title="details" class="var-name">$prepared_statements_created</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$queue_max_size" title="details" class="var-name">$queue_max_size</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$sqlite_db_file" title="details" class="var-name">$sqlite_db_file</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$working_directory" title="details" class="var-name">$working_directory</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																				
+												<div class="method-definition">
+											<span class="method-result">PHPCrawlerDocumentInfoQueue</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$create_tables</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addDocumentInfo" title="details" class="method-name">addDocumentInfo</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$DocInfo</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#createPreparedStatements" title="details" class="method-name">createPreparedStatements</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getDocumentInfoCount" title="details" class="method-name">getDocumentInfoCount</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getNextDocumentInfo" title="details" class="method-name">getNextDocumentInfo</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#openConnection" title="details" class="method-name">openConnection</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$create_tables</span> = <span class="var-default">false</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$PDO" id="$PDO"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$PDO</span>
+						(line <span class="line-number">10</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$prepared_statements_created" id="$prepared_statements_created"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$prepared_statements_created</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">14</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$queue_max_size" id="$queue_max_size"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$queue_max_size</span>
+			 = <span class="var-default"> 20</span>			(line <span class="line-number">18</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sqlite_db_file" id="$sqlite_db_file"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$sqlite_db_file</span>
+						(line <span class="line-number">12</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$working_directory" id="$working_directory"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$working_directory</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">16</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">26</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initiates a PHPCrawlerDocumentInfoQueue</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">PHPCrawlerDocumentInfoQueue</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$create_tables</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: The SQLite-fiel to use.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$create_tables</span><span class="var-description">: Defines whether all necessary tables should be created</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddDocumentInfo" id="addDocumentInfo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addDocumentInfo</span> (line <span class="line-number">48</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a PHPCrawlerDocumentInfo-object to the queue</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addDocumentInfo
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$DocInfo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+				<span class="var-name">$DocInfo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreatePreparedStatements" id="createPreparedStatements"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">createPreparedStatements</span> (line <span class="line-number">92</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			createPreparedStatements
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDocumentInfoCount" id="getDocumentInfoCount"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDocumentInfoCount</span> (line <span class="line-number">36</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the current number of PHPCrawlerDocumentInfo-objects in the queue</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getDocumentInfoCount
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNextDocumentInfo" id="getNextDocumentInfo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNextDocumentInfo</span> (line <span class="line-number">70</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a PHPCrawlerDocumentInfo-object from the queue</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getNextDocumentInfo
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodopenConnection" id="openConnection"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">openConnection</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the sqlite-db-file and opens connection to it.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			openConnection
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$create_tables</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$create_tables</span><span class="var-description">: Defines whether all necessary tables should be created</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

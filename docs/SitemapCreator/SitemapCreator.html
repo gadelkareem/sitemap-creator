@@ -1,0 +1,2375 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class SitemapCreator</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class SitemapCreator</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sitemap Creator creates XML sitemaps files compatible with the standard  sitemaps.org protocol and supported by Google and Bing.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Waleed Gadelkareem &lt;<a href="mailto:gadelkareem@gmail.com">gadelkareem@gmail.com</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">link:</span> <a href="http://sitemapcreator.org/">http://sitemapcreator.org/</a></li>
+				<li><span class="field">link:</span> <a href="http://gadelkareem.com/">http://gadelkareem.com/</a></li>
+				<li><span class="field">license:</span> GPLv2</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_SitemapCreator.class.php.html">/SitemapCreator.class.php</a> (line <span class="field">19</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<a href="#FREQUENCY_Disable" title="details" class="const-name">FREQUENCY_Disable</a> = 					<span class="var-type"> 0</span>
+
+				</div>
+								<div class="const-title">
+					<a href="#FREQUENCY_LAST_MODIFIED" title="details" class="const-name">FREQUENCY_LAST_MODIFIED</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+								<div class="const-title">
+					<a href="#FREQUENCY_PRIORITY" title="details" class="const-name">FREQUENCY_PRIORITY</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<a href="#PRIORITY_CRAWLED_FIRST" title="details" class="const-name">PRIORITY_CRAWLED_FIRST</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+								<div class="const-title">
+					<a href="#PRIORITY_Disable" title="details" class="const-name">PRIORITY_Disable</a> = 					<span class="var-type"> 0</span>
+
+				</div>
+								<div class="const-title">
+					<a href="#PRIORITY_URL_STRUCTURE" title="details" class="const-name">PRIORITY_URL_STRUCTURE</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																																																												<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$useragent" title="details" class="var-name">$useragent</a>
+				</div>
+																																																				<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$classpath" title="details" class="var-name">$classpath</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$class_version" title="details" class="var-name">$class_version</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Crawler" title="details" class="var-name">$Crawler</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$crawler_reports" title="details" class="var-name">$crawler_reports</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$data_dir" title="details" class="var-name">$data_dir</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$engines" title="details" class="var-name">$engines</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$entries" title="details" class="var-name">$entries</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$entries_per_sitemap" title="details" class="var-name">$entries_per_sitemap</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$frequency_mode" title="details" class="var-name">$frequency_mode</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$frequency_types" title="details" class="var-name">$frequency_types</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$min_frequency" title="details" class="var-name">$min_frequency</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$min_priority" title="details" class="var-name">$min_priority</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$now" title="details" class="var-name">$now</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$priority_mode" title="details" class="var-name">$priority_mode</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$site" title="details" class="var-name">$site</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$sitemaps_count" title="details" class="var-name">$sitemaps_count</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$sitemaps_dir" title="details" class="var-name">$sitemaps_dir</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$sitemaps_url" title="details" class="var-name">$sitemaps_url</a>
+				</div>
+																								<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$use_gzip" title="details" class="var-name">$use_gzip</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$xml_foot" title="details" class="var-name">$xml_foot</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$xml_head" title="details" class="var-name">$xml_head</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$xml_url_set" title="details" class="var-name">$xml_url_set</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																				<div class="method-definition">
+					static 						<span class="method-result">array</span>
+										<a href="#openURL" title="details" class="method-name">openURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$max_redirects</span> = <span class="var-default">5</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">15</span>])
+									</div>
+																																																																																																																																																								<div class="method-definition">
+					static 						<span class="method-result">bool</span>
+										<a href="#validSitemapName" title="details" class="method-name">validSitemapName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																																
+												<div class="method-definition">
+											<span class="method-result">SitemapCreator</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$site</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addEngine" title="details" class="method-name">addEngine</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addEntry" title="details" class="method-name">addEntry</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$entry</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#addSitemapEXT" title="details" class="method-name">addSitemapEXT</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#addToRobots" title="details" class="method-name">addToRobots</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$robots_file</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addXMLURLSet" title="details" class="method-name">addXMLURLSet</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$entry</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#calcFrequency" title="details" class="method-name">calcFrequency</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$entry</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#calcPriority" title="details" class="method-name">calcPriority</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$entry</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$total_entries</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Crawl" title="details" class="method-name">Crawl</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#CreateSitemaps" title="details" class="method-name">CreateSitemaps</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#csvFile" title="details" class="method-name">csvFile</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getDataDir" title="details" class="method-name">getDataDir</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getEntries" title="details" class="method-name">getEntries</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool|string</span>
+										<a href="#getSitemapDirName" title="details" class="method-name">getSitemapDirName</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool|string</span>
+										<a href="#getSitemapPath" title="details" class="method-name">getSitemapPath</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSitemapsDir" title="details" class="method-name">getSitemapsDir</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool|string</span>
+										<a href="#getSitemapURL" title="details" class="method-name">getSitemapURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../phpcrawl/SMCCrawler.html">SMCCrawler</a></span>
+										<a href="#initCrawler" title="details" class="method-name">initCrawler</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#isDataDirWritable" title="details" class="method-name">isDataDirWritable</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$dir</span>)
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#ping" title="details" class="method-name">ping</a>
+											([<span class="var-type">string|int</span>&nbsp;<span class="var-name">$filename</span> = <span class="var-default">'index'</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#prepareSitemapsDir" title="details" class="method-name">prepareSitemapsDir</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#putContent" title="details" class="method-name">putContent</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, <span class="var-type">$XML</span>&nbsp;<span class="var-name">$XML</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#readFromCSV" title="details" class="method-name">readFromCSV</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#readSitemap" title="details" class="method-name">readSitemap</a>
+											(<span class="var-type">string|int</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#removeSitemaps" title="details" class="method-name">removeSitemaps</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCrawlerDefaults" title="details" class="method-name">setCrawlerDefaults</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setDataDir" title="details" class="method-name">setDataDir</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setEntries" title="details" class="method-name">setEntries</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setEntriesPerSitemap" title="details" class="method-name">setEntriesPerSitemap</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$number</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setFrequency" title="details" class="method-name">setFrequency</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setMinFrequency" title="details" class="method-name">setMinFrequency</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setMinPriority" title="details" class="method-name">setMinPriority</a>
+											(<span class="var-type">float</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setPriority" title="details" class="method-name">setPriority</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|bool</span>
+										<a href="#setSite" title="details" class="method-name">setSite</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$site</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSitemapURL" title="details" class="method-name">setSitemapURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#useGzip" title="details" class="method-name">useGzip</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#writeIndex" title="details" class="method-name">writeIndex</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#writeSitemap" title="details" class="method-name">writeSitemap</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#writeToCSV" title="details" class="method-name">writeToCSV</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">''</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$useragent" id="$useragent"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$useragent</span>
+			 = <span class="var-default"> &quot;Sitemaps Creator 1.0 (compatible; sitemapcreatorbot/1.0; +http://sitemapcreator.org/)&quot;</span>			(line <span class="line-number">22</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$classpath" id="$classpath"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$classpath</span>
+						(line <span class="line-number">214</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$class_version" id="$class_version"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$class_version</span>
+			 = <span class="var-default"> &quot;1.0&quot;</span>			(line <span class="line-number">21</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Crawler" id="$Crawler"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Crawler</span>
+						(line <span class="line-number">208</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$crawler_reports" id="$crawler_reports"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$crawler_reports</span>
+						(line <span class="line-number">221</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$data_dir" id="$data_dir"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$data_dir</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">161</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Data directory Path.</p>
+<p class="description"><p>Valid system path for the directory where sitemaps directories  will be created.The directory should be writable.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetDataDir">SitemapCreator::setDataDir()</a></li>
+				<li><span class="field">see:</span> getDataDir()
+
+ Default: sys_get_temp_dir()</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$engines" id="$engines"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$engines</span>
+			 = <span class="var-default">array<br />        (<br />        'Google' =&gt; 'http://www.google.com/webmasters/sitemaps/ping?sitemap=',<br />        'Live Search' =&gt; 'http://www.bing.com/webmaster/ping.aspx?siteMap='<br />    )</span>			(line <span class="line-number">198</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ping URLs of the search engines sitemaps API</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodaddEngine">SitemapCreator::addEngine()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$entries" id="$entries"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$entries</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">123</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array contianing the entries of the sitemap.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$entries_per_sitemap" id="$entries_per_sitemap"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$entries_per_sitemap</span>
+			 = <span class="var-default"> 50000</span>			(line <span class="line-number">131</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Maximum number of entries per sitemap file</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetEntriesPerSitemap">SitemapCreator::setEntriesPerSitemap()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$frequency_mode" id="$frequency_mode"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$frequency_mode</span>
+			 = <span class="var-default"> 1</span>			(line <span class="line-number">79</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Frequency mode</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> one of SitemapCreator::FREQUENCY-constants</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetFrequency">SitemapCreator::setFrequency()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$frequency_types" id="$frequency_types"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$frequency_types</span>
+			 = <span class="var-default">array<br />        (<br />        'always' =&gt; 3600, //1 hour<br />        'hourly' =&gt; 86400, //1 day<br />        'daily' =&gt; 604800, //1 week<br />        'weekly' =&gt; 2678400, //1 month<br />        'monthly' =&gt; 31536000, //1 year<br />        'yearly' =&gt; 63072000, //2 years<br />        'never' =&gt; 94608000 //3 years<br />    )</span>			(line <span class="line-number">91</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array contains Frequency types as keys and max time in seconds as values.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$min_frequency" id="$min_frequency"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$min_frequency</span>
+			 = <span class="var-default"> 'never'</span>			(line <span class="line-number">85</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Minimum Priority</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> one of  <a href="../SitemapCreator/SitemapCreator.html#var$frequency_types">$frequency_types</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetMinFrequency">SitemapCreator::setMinFrequency()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$min_priority" id="$min_priority"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$min_priority</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">53</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Minimum Priority</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetMinPriority">SitemapCreator::setMinPriority()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$now" id="$now"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$now</span>
+						(line <span class="line-number">106</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Current time().</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$priority_mode" id="$priority_mode"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$priority_mode</span>
+			 = <span class="var-default"> 1</span>			(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Priority mode</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> one of SitemapCreator::PRIORITY-constants</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetPriority">SitemapCreator::setPriority()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$site" id="$site"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$site</span>
+						(line <span class="line-number">116</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The URL of the website.It should be full qualified and normalized.</p>
+<p class="description"><p>Set on class creation <a href="../SitemapCreator/SitemapCreator.html#method__construct">__construct()</a> or <a href="../SitemapCreator/SitemapCreator.html#methodsetSite">setSite()</a></p><p>Default: 'http://' . $_SERVER['HTTP_HOST'] . '/'</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sitemaps_count" id="$sitemaps_count"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$sitemaps_count</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">138</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of sitemap files created</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sitemaps_dir" id="$sitemaps_dir"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$sitemaps_dir</span>
+						(line <span class="line-number">169</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sitemaps directory path auto created in prepareSitemapsDir()</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodgetSitemapPath">SitemapCreator::getSitemapPath()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sitemaps_url" id="$sitemaps_url"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$sitemaps_url</span>
+						(line <span class="line-number">182</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sitemap URL where the sitemap file name will be appended to the end of the URL.</p>
+<p class="description"><p>If not set then the link will be generated automatically.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodgetSitemapURL">SitemapCreator::getSitemapURL()</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetSitemapURL">SitemapCreator::setSitemapURL()</a></li>
+				<li><span class="field">access:</span> protected</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$use_gzip" id="$use_gzip"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$use_gzip</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">190</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">choose to save sitemaps in gzip format</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methoduseGzip">SitemapCreator::useGzip()</a></li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$xml_foot" id="$xml_foot"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$xml_foot</span>
+						(line <span class="line-number">147</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$xml_head" id="$xml_head"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$xml_head</span>
+						(line <span class="line-number">146</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$xml_url_set" id="$xml_url_set"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$xml_url_set</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">145</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XML string containing sitemap &lt;urlset&gt;&lt;/urlset&gt; elements</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodopenURL" id="openURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method openURL</span> (line <span class="line-number">940</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Open URL and get respond body or error</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array contains errors as $results['error'], or respond body as $request['body']</li>
+				<li><span class="field">see:</span> Ping()</li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">array</span>
+		<span class="method-name">
+			openURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$max_redirects</span> = <span class="var-default">5</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">15</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: URL to retrieve</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$max_redirects</span><span class="var-description">: max allowed redirects (optional)</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$timeout</span><span class="var-description">: process timeout (optional )</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodvalidSitemapName" id="validSitemapName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method validSitemapName</span> (line <span class="line-number">570</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validates sitemap filename</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodgetSitemapPath">SitemapCreator::getSitemapPath()</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodgetSitemapURL">SitemapCreator::getSitemapURL()</a></li>
+				<li><span class="field">section:</span> 2 Info</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			validSitemapName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$filename</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">230</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initiates a new Sitemap.</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">SitemapCreator</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$site</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$site</span><span class="var-description">: The url may contain the protocol (http://www.foo.com or https://www.foo.com), the port (http://www.foo.com:4500/index.php)                                         and/or basic-authentication-data (http://loginname:passwd@www.foo.com)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddEngine" id="addEngine"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addEngine</span> (line <span class="line-number">469</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">add a ping URL to the array $engines</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addEngine
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: ping URL of the search engine</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddEntry" id="addEntry"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addEntry</span> (line <span class="line-number">456</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">add URL entry manually to <a href="../phpcrawl/SMCCrawler.html#var$entries">$entries</a></p>
+<p class="description"><p>* this method throws exception if $entry is not an array or    does not have 'URL' key</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addEntry
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$entry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entry</span><span class="var-description">: URL set to be added to sitemap</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddSitemapEXT" id="addSitemapEXT"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addSitemapEXT</span> (line <span class="line-number">710</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">adds sitemap gzip extension to sitemap filename if $use_gzip enabled</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> filename</li>
+				<li><span class="field">see:</span> useGzip();</li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			addSitemapEXT
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$filename</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddToRobots" id="addToRobots"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addToRobots</span> (line <span class="line-number">1037</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add index sitemap URL to robots.txt file</p>
+<p class="description"><p>* this method throws exception if robots file doesn't exist and is writable</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> robots.txt text</li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			addToRobots
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$robots_file</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$robots_file</span><span class="var-description">: Robots.txt file path</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddXMLURLSet" id="addXMLURLSet"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addXMLURLSet</span> (line <span class="line-number">867</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add single XML code to $xml_url_set</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addXMLURLSet
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$entry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entry</span><span class="var-description">: URL set entry</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcalcFrequency" id="calcFrequency"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">calcFrequency</span> (line <span class="line-number">812</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">calculates Frequency for each entry $priority_mode</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#var$frequency_types">SitemapCreator::$frequency_types</a></li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			calcFrequency
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$entry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$key</span><span class="var-description">: array offset                       $entry reference to array offset in <a href="../SitemapCreator/SitemapCreator.html#var$entries">$entries</a></span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$entry</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcalcPriority" id="calcPriority"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">calcPriority</span> (line <span class="line-number">770</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">calculates Priority for each entry $priority_mode</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			calcPriority
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$entry</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$total_entries</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$key</span><span class="var-description">: array offset                       $entry reference to array offset in <a href="../SitemapCreator/SitemapCreator.html#var$entries">$entries</a>                       $total_entries <a href="../SitemapCreator/SitemapCreator.html#var$entries">$entries</a> array count</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$entry</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$total_entries</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodCrawl" id="Crawl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Crawl</span> (line <span class="line-number">620</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Start the crawl process</p>
+<p class="description"><p>More related options could be found on <a href="http://phpcrawl.cuab.de/classreferences/index.html">http://phpcrawl.cuab.de/classreferences/index.html</a></p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodinitCrawler">SitemapCreator::initCrawler()</a></li>
+				<li><span class="field">section:</span> 3 Crawler</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Crawl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodCreateSitemaps" id="CreateSitemaps"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">CreateSitemaps</span> (line <span class="line-number">728</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create sitemaps files and index</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			CreateSitemaps
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entries</span><span class="var-description">: array of entries to be added to sitemap</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcsvFile" id="csvFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">csvFile</span> (line <span class="line-number">1138</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">get CSV file path</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> CSV file path</li>
+				<li><span class="field">section:</span> 5 CSV</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			csvFile
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDataDir" id="getDataDir"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDataDir</span> (line <span class="line-number">558</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get data directory path $data_dir</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> <a href="../SitemapCreator/SitemapCreator.html#var$data_dir">$data_dir</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetDataDir">SitemapCreator::setDataDir()</a></li>
+				<li><span class="field">section:</span> 2 Info</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDataDir
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetEntries" id="getEntries"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEntries</span> (line <span class="line-number">547</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get URLs sets array <a href="../phpcrawl/SMCCrawler.html#var$entries">$entries</a></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> <a href="../SitemapCreator/SitemapCreator.html#var$entries">$entries</a></li>
+				<li><span class="field">section:</span> 2 Info</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getEntries
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSitemapDirName" id="getSitemapDirName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSitemapDirName</span> (line <span class="line-number">518</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get sitemap directory name</p>
+<p class="description"><p>Get this site's directory name where sitemaps are strored.   The directory is created inside the <a href="../SitemapCreator/SitemapCreator.html#var$data_dir">$data_dir</a> directory.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> false if <a href="../SitemapCreator/SitemapCreator.html#var$site">$site</a> has not been set, sitemap dir path on success</li>
+				<li><span class="field">section:</span> 2 Info</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool|string</span>
+		<span class="method-name">
+			getSitemapDirName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSitemapPath" id="getSitemapPath"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSitemapPath</span> (line <span class="line-number">482</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get sitemap file path</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> false on invalid $filename parameter, sitemap path on success</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetDataDir">SitemapCreator::setDataDir()</a></li>
+				<li><span class="field">section:</span> 2 Info</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool|string</span>
+		<span class="method-name">
+			getSitemapPath
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: 'index' string or number</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSitemapsDir" id="getSitemapsDir"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSitemapsDir</span> (line <span class="line-number">535</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get sitemap directory path $sitemaps_dir</p>
+<p class="description"><p>Get this site's directory path where sitemaps are strored.   The directory is created inside the <a href="../SitemapCreator/SitemapCreator.html#var$data_dir">$data_dir</a> directory.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> SitemapCreator::sitemaps_dir sitemap dir path</li>
+				<li><span class="field">section:</span> 2 Info</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSitemapsDir
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSitemapURL" id="getSitemapURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSitemapURL</span> (line <span class="line-number">499</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get sitemap file URL</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> false on invalid $filename parameter, sitemap path on success</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodvalidSitemapName">SitemapCreator::validSitemapName()</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodaddSitemapEXT">SitemapCreator::addSitemapEXT()</a></li>
+				<li><span class="field">section:</span> 2 Info</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool|string</span>
+		<span class="method-name">
+			getSitemapURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: 'index' string or number</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinitCrawler" id="initCrawler"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">initCrawler</span> (line <span class="line-number">591</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initiate the crawler $Crawler</p>
+<p class="description"><p>visit <a href="http://phpcrawl.cuab.de/classreferences/index.html">http://phpcrawl.cuab.de/classreferences/index.html</a> for  full cralwer options which can be accessed through <a href="../SitemapCreator/SitemapCreator.html#var$Crawler">$Crawler</a> object.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object <a href="../phpcrawl/SMCCrawler.html">SMCCrawler</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodCrawl">SitemapCreator::Crawl()</a></li>
+				<li><span class="field">section:</span> 3 Crawler</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpcrawl/SMCCrawler.html">SMCCrawler</a></span>
+		<span class="method-name">
+			initCrawler
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisDataDirWritable" id="isDataDirWritable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isDataDirWritable</span> (line <span class="line-number">697</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if data directory is writable $data_dir</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetDataDir">SitemapCreator::setDataDir()</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodprepareSitemapsDir">SitemapCreator::prepareSitemapsDir()</a></li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isDataDirWritable
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$dir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$dir</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodping" id="ping"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ping</span> (line <span class="line-number">919</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ping search engines</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array contains errors as $results['google']['error'], or respond body as $request['google']['body']</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodaddEngine">SitemapCreator::addEngine()</a></li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			ping
+		</span>
+					([<span class="var-type">string|int</span>&nbsp;<span class="var-name">$filename</span> = <span class="var-default">'index'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|int</span>
+				<span class="var-name">$filename</span><span class="var-description">: 'index' string or number</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprepareSitemapsDir" id="prepareSitemapsDir"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">prepareSitemapsDir</span> (line <span class="line-number">675</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates sitemaps directory $sitemaps_dir</p>
+<p class="description"><p>* this method throws exception if data is not writable</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> setDataDir();</li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			prepareSitemapsDir
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodputContent" id="putContent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">putContent</span> (line <span class="line-number">1000</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Write XML to disk</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			putContent
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, <span class="var-type">$XML</span>&nbsp;<span class="var-name">$XML</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: file path</span>			</li>
+					<li>
+				<span class="var-type">$XML</span>
+				<span class="var-name">$XML</span><span class="var-description">: XML code</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreadFromCSV" id="readFromCSV"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">readFromCSV</span> (line <span class="line-number">1110</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read from CSV file and add to <a href="../phpcrawl/SMCCrawler.html#var$entries">$entries</a></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">section:</span> 5 CSV</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			readFromCSV
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: file path</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreadSitemap" id="readSitemap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">readSitemap</span> (line <span class="line-number">1017</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read sitemap file from disk</p>
+<p class="description"><p>*this method throws exception if sitemap file doesn't exsit</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			readSitemap
+		</span>
+					(<span class="var-type">string|int</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|int</span>
+				<span class="var-name">$filename</span><span class="var-description">: 'index' string or number</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremoveSitemaps" id="removeSitemaps"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">removeSitemaps</span> (line <span class="line-number">1062</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Delete all sitemap dir and files</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			removeSitemaps
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetCrawlerDefaults" id="setCrawlerDefaults"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCrawlerDefaults</span> (line <span class="line-number">647</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load default crawler settings for $Crawler</p>
+<p class="description"><p>Internally load default options, no external calls allowed   More related options could be found on  <a href="http://phpcrawl.cuab.de/classreferences/index.html">http://phpcrawl.cuab.de/classreferences/index.html</a></p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodCrawl">SitemapCreator::Crawl()</a></li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodinitCrawler">SitemapCreator::initCrawler()</a></li>
+				<li><span class="field">section:</span> 3 Crawler</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCrawlerDefaults
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetDataDir" id="setDataDir"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDataDir</span> (line <span class="line-number">290</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the data directory path of the sitemaps $data_dir</p>
+<p class="description"><p>The directory is used to store sitemaps and csv files. If not set then  sys_get_temp_dir() will be used.</p><p>* This method throws an exception if the path is not valid or the directory is not writable.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodprepareSitemapsDir">SitemapCreator::prepareSitemapsDir()</a></li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDataDir
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: data directory <a href="../SitemapCreator/SitemapCreator.html#var$data_dir">$data_dir</a></span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetEntries" id="setEntries"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setEntries</span> (line <span class="line-number">358</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the URLs sets manually <a href="../phpcrawl/SMCCrawler.html#var$entries">$entries</a></p>
+<p class="description"><p>* this method throws exception if $entires is not an array or    the first entry does not have 'URL' key</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setEntries
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entries</span><span class="var-description">: array of entries to be added to sitemap</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetEntriesPerSitemap" id="setEntriesPerSitemap"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setEntriesPerSitemap</span> (line <span class="line-number">325</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets number of URLs set for each sitemap file $entries_per_sitemap</p>
+<p class="description"><p>Each sitemap file should have a maximum of 50,000 URL.  Use this function to change the number of URLs set per sitemap.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setEntriesPerSitemap
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$number</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$number</span><span class="var-description">: number greater than 0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFrequency" id="setFrequency"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFrequency</span> (line <span class="line-number">416</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set Frequency mode $frequency_mode</p>
+<p class="description"><p>Choose how the Frequency of every URL should be calculated</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetMinFrequency">SitemapCreator::setMinFrequency()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.sitemaps.org/protocol.html#changefreqdef">http://www.sitemaps.org/protocol.html#changefreqdef</a></li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setFrequency
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$mode</span><span class="var-description">: number between 0 and 2 or  use the predefined constants                                   SitemapCreator::FREQUENCY_Disable  Disables frequency calculations                                   SitemapCreator::FREQUENCY_LAST_MODIFIED Latest modified pages get higher frequency                                   SitemapCreator::FREQUENCY_PRIORITY Higher priority pages get higher frequency</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMinFrequency" id="setMinFrequency"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMinFrequency</span> (line <span class="line-number">432</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set minimum Frequency value for all URLs $min_priority</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetMinFrequency">SitemapCreator::setMinFrequency()</a></li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setMinFrequency
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mode</span><span class="var-description">: one of <a href="../SitemapCreator/SitemapCreator.html#var$frequency_types">$frequency_types</a> keys</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMinPriority" id="setMinPriority"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMinPriority</span> (line <span class="line-number">395</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set minimum Priority value for all URLs $min_priority</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetMinPriority">SitemapCreator::setMinPriority()</a></li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setMinPriority
+		</span>
+					(<span class="var-type">float</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">float</span>
+				<span class="var-name">$mode</span><span class="var-description">: number between 0 and 1.0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPriority" id="setPriority"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPriority</span> (line <span class="line-number">379</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set Priority mode $priority_mode</p>
+<p class="description"><p>Choose how the Priority of every URL should be calculated</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetMinPriority">SitemapCreator::setMinPriority()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.sitemaps.org/protocol.html#prioritydef">http://www.sitemaps.org/protocol.html#prioritydef</a></li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setPriority
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$mode</span><span class="var-description">: number between 0 and 2 or  use the predefined constants                                   SitemapCreator::PRIORITY_Disable  Disables priority calculations                                   SitemapCreator::PRIORITY_CRAWLED_FIRST Crawled first pages get higher priority                                   SitemapCreator::PRIORITY_URL_STRUCTURE Deeper pathes get lower priority</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSite" id="setSite"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSite</span> (line <span class="line-number">259</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the URL of the website $site</p>
+<p class="description"><p>Normalizes the given URL and returns a full qualified and normalized URL.  The method also generates <a href="../SitemapCreator/SitemapCreator.html#var$sitemaps_url">$sitemaps_url</a> if not set.</p><p>* This method throws an exception if the URL is invalid</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> SitemapCreator::$site|false Returns the valid normalized URL on success or false on failure</li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|bool</span>
+		<span class="method-name">
+			setSite
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$site</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$site</span><span class="var-description">: The url may contain the protocol (http://www.foo.com or https://www.foo.com), the port (http://www.foo.com:4500/index.php)                                         and/or basic-authentication-data (http://loginname:passwd@www.foo.com)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSitemapURL" id="setSitemapURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSitemapURL</span> (line <span class="line-number">309</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the URL of the sitemap files $sitemaps_url</p>
+<p class="description"><p>Sitemap URL where the sitemap file name will be appended to the end of the URL.</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodgetSitemapURL">SitemapCreator::getSitemapURL()</a></li>
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSitemapURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: The sitemap URL</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduseGzip" id="useGzip"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">useGzip</span> (line <span class="line-number">338</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use gzip compressed sitemaps files $use_gzip</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			useGzip
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span><span class="var-description">: true to enable gzip, false otherwise</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwriteIndex" id="writeIndex"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">writeIndex</span> (line <span class="line-number">897</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Write sitemap index file</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			writeIndex
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodwriteSitemap" id="writeSitemap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">writeSitemap</span> (line <span class="line-number">887</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Write sitemap file</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 4 Sitemap</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			writeSitemap
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodwriteToCSV" id="writeToCSV"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">writeToCSV</span> (line <span class="line-number">1083</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Write to CSV file</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false otherwise</li>
+				<li><span class="field">section:</span> 5 CSV</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			writeToCSV
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: file path</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constFREQUENCY_Disable" id="FREQUENCY_Disable"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">FREQUENCY_Disable</span>
+			 = <span class="const-default"> 0</span>
+			(line <span class="line-number">61</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disables frequency calculations</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetFrequency">SitemapCreator::setFrequency()</a></li>
+			</ul>
+	
+	
+</div>
+<a name="constFREQUENCY_LAST_MODIFIED" id="FREQUENCY_LAST_MODIFIED"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">FREQUENCY_LAST_MODIFIED</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">67</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Latest modified pages get higher frequency</p>
+<p class="description"><p>Default</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetFrequency">SitemapCreator::setFrequency()</a></li>
+			</ul>
+	
+	
+</div>
+<a name="constFREQUENCY_PRIORITY" id="FREQUENCY_PRIORITY"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">FREQUENCY_PRIORITY</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">72</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Higher priority pages get higher frequency</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetFrequency">SitemapCreator::setFrequency()</a></li>
+			</ul>
+	
+	
+</div>
+<a name="constPRIORITY_CRAWLED_FIRST" id="PRIORITY_CRAWLED_FIRST"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">PRIORITY_CRAWLED_FIRST</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">35</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Crawled first pages get higher priority</p>
+<p class="description"><p>Default</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetPriority">SitemapCreator::setPriority()</a></li>
+			</ul>
+	
+	
+</div>
+<a name="constPRIORITY_Disable" id="PRIORITY_Disable"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">PRIORITY_Disable</span>
+			 = <span class="const-default"> 0</span>
+			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disables priority calculations</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetPriority">SitemapCreator::setPriority()</a></li>
+			</ul>
+	
+	
+</div>
+<a name="constPRIORITY_URL_STRUCTURE" id="PRIORITY_URL_STRUCTURE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">PRIORITY_URL_STRUCTURE</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Deeper pathes get lower priority</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SitemapCreator/SitemapCreator.html#methodsetPriority">SitemapCreator::setPriority()</a></li>
+			</ul>
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

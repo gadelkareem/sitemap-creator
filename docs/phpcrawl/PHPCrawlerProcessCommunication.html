@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerProcessCommunication</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerProcessCommunication</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class containing methods for process handling and communication</p>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---ProcessCommunication---PHPCrawlerProcessCommunication.class.php.html">/libs/PHPCrawler/ProcessCommunication/PHPCrawlerProcessCommunication.class.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$crawlerStatus" title="details" class="var-name">$crawlerStatus</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$crawler_uniqid" title="details" class="var-name">$crawler_uniqid</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$multiprocess_mode" title="details" class="var-name">$multiprocess_mode</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfoQueue.html">PHPCrawlerDocumentInfoQueue</a></span>
+					<a href="#$resumtion_enabled" title="details" class="var-name">$resumtion_enabled</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$working_directory" title="details" class="var-name">$working_directory</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																				
+												<div class="method-definition">
+											<span class="method-result">PHPCrawlerProcessCommunication</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$crawler_uniqid</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$multiprocess_mode</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$working_directory</span>, <span class="var-type">bool</span>&nbsp;<span class="var-name">$enable_resumtion</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#childProcessAlive" title="details" class="method-name">childProcessAlive</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getChildPIDs" title="details" class="method-name">getChildPIDs</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$process_count</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../phpcrawl/PHPCrawlerStatus.html">PHPCrawlerStatus</a></span>
+										<a href="#getCrawlerStatus" title="details" class="method-name">getCrawlerStatus</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#killChildProcesses" title="details" class="method-name">killChildProcesses</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#registerChildPID" title="details" class="method-name">registerChildPID</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$pid</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCrawlerStatus" title="details" class="method-name">setCrawlerStatus</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerStatus.html">PHPCrawlerStatus</a></span>&nbsp;<span class="var-name">$crawler_status</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#updateCrawlerStatus" title="details" class="method-name">updateCrawlerStatus</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$abort_reason</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$first_content_url</span> = <span class="var-default">null</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$crawlerStatus" id="$crawlerStatus"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$crawlerStatus</span>
+						(line <span class="line-number">16</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$crawler_uniqid" id="$crawler_uniqid"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$crawler_uniqid</span>
+						(line <span class="line-number">10</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$multiprocess_mode" id="$multiprocess_mode"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$multiprocess_mode</span>
+						(line <span class="line-number">12</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$resumtion_enabled" id="$resumtion_enabled"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfoQueue.html">PHPCrawlerDocumentInfoQueue</a></span>
+			<span class="var-name">$resumtion_enabled</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag indicating whether resumtion is activated</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$working_directory" id="$working_directory"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$working_directory</span>
+						(line <span class="line-number">14</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">33</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initiates a new PHPCrawlerProcessCommunication-object.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">PHPCrawlerProcessCommunication</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$crawler_uniqid</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$multiprocess_mode</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$working_directory</span>, <span class="var-type">bool</span>&nbsp;<span class="var-name">$enable_resumtion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$crawler_uniqid</span><span class="var-description">: UID of the crawler</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$multiprocess_mode</span><span class="var-description">: Multprocess-mode the crawler is running (one of the PHPCrawlerMultiProcessModes-constants)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$working_directory</span><span class="var-description">: Working-dir of the crawler</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$enable_resumtion</span><span class="var-description">: TRUE if resumption of crawling-processes should be possible</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodchildProcessAlive" id="childProcessAlive"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">childProcessAlive</span> (line <span class="line-number">192</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks wehther any child-processes a (still) running.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			childProcessAlive
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetChildPIDs" id="getChildPIDs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getChildPIDs</span> (line <span class="line-number">152</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns alls PIDs of all running child-processes</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Numeric array conatining the PIDs</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getChildPIDs
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$process_count</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$process_count</span><span class="var-description">: If set, this function tries to get the child-PIDs until the gievn number of PIDs                            was determinated.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetCrawlerStatus" id="getCrawlerStatus"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCrawlerStatus</span> (line <span class="line-number">64</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns/reads the current crawler-status</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The current crawlerstatus as a PHPCrawlerStatus-object</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpcrawl/PHPCrawlerStatus.html">PHPCrawlerStatus</a></span>
+		<span class="method-name">
+			getCrawlerStatus
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodkillChildProcesses" id="killChildProcesses"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">killChildProcesses</span> (line <span class="line-number">178</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Kills all running child-processes</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			killChildProcesses
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodregisterChildPID" id="registerChildPID"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">registerChildPID</span> (line <span class="line-number">135</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Registers the PID of a child-process</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			registerChildPID
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$pid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$pid</span><span class="var-description">: The IPD</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCrawlerStatus" id="setCrawlerStatus"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCrawlerStatus</span> (line <span class="line-number">48</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets/writes the current crawler-status</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCrawlerStatus
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerStatus.html">PHPCrawlerStatus</a></span>&nbsp;<span class="var-name">$crawler_status</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerStatus.html">PHPCrawlerStatus</a></span>
+				<span class="var-name">$crawler_status</span><span class="var-description">: The status to set</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateCrawlerStatus" id="updateCrawlerStatus"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateCrawlerStatus</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates the status of the crawler</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			updateCrawlerStatus
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$abort_reason</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$first_content_url</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+				<span class="var-name">$PageInfo</span><span class="var-description">: The PHPCrawlerDocumentInfo-object of the last received document                                                   or NULL if no document was received.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$abort_reason</span><span class="var-description">: One of the PHPCrawlerAbortReasons::ABORTREASON-constants if the crawling-process                                                   should get aborted, otherwise NULL</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$first_content_url</span><span class="var-description">: The first URL some content was found in (or NULL if no content was found so far).</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

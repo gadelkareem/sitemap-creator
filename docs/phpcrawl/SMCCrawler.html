@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class SMCCrawler</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class SMCCrawler</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Loading external PHPCrawler-class</p>
+<p class="description"><p>Uncomment for standalone</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Uwe Hunfeld (phpcrawl@cuab.de)</li>
+				<li><span class="field">version:</span> 0.81</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_SitemapCreatorCrawler.class.php.html">/SitemapCreatorCrawler.class.php</a> (line <span class="field">25</span>)
+		</p>
+		
+				
+		<pre><a href="../phpcrawl/PHPCrawler.html">PHPCrawler</a>
+   |
+   --SMCCrawler</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$entries" title="details" class="var-name">$entries</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$LastModifiedCount" title="details" class="var-name">$LastModifiedCount</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																				
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addURL_Entry" title="details" class="method-name">addURL_Entry</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$entry</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#enableLastModifiedCount" title="details" class="method-name">enableLastModifiedCount</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getLastModified" title="details" class="method-name">getLastModified</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$entry</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#handleDocumentInfo" title="details" class="method-name">handleDocumentInfo</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$entries" id="$entries"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$entries</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array contianing the entries.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$LastModifiedCount" id="$LastModifiedCount"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$LastModifiedCount</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">get Last Modified header</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../phpcrawl/SMCCrawler.html#methodenableLastModifiedCount">SMCCrawler::enableLastModifiedCount()</a></li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../phpcrawl/PHPCrawler.html">PHPCrawler</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$child_process_number">PHPCrawler::$child_process_number</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$class_version">PHPCrawler::$class_version</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$CookieCache">PHPCrawler::$CookieCache</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$cookie_handling_enabled">PHPCrawler::$cookie_handling_enabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$crawler_uniqid">PHPCrawler::$crawler_uniqid</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$DocumentInfoQueue">PHPCrawler::$DocumentInfoQueue</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$document_limit">PHPCrawler::$document_limit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$follow_redirects_till_content">PHPCrawler::$follow_redirects_till_content</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$is_chlid_process">PHPCrawler::$is_chlid_process</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$is_parent_process">PHPCrawler::$is_parent_process</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$LinkCache">PHPCrawler::$LinkCache</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$link_priority_array">PHPCrawler::$link_priority_array</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$multiprocess_mode">PHPCrawler::$multiprocess_mode</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$obey_robots_txt">PHPCrawler::$obey_robots_txt</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$only_count_received_documents">PHPCrawler::$only_count_received_documents</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$PageRequest">PHPCrawler::$PageRequest</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$porcess_abort_reason">PHPCrawler::$porcess_abort_reason</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$ProcessCommunication">PHPCrawler::$ProcessCommunication</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$resumtion_enabled">PHPCrawler::$resumtion_enabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$RobotsTxtParser">PHPCrawler::$RobotsTxtParser</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$starting_url">PHPCrawler::$starting_url</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$traffic_limit">PHPCrawler::$traffic_limit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$urlcache_purged">PHPCrawler::$urlcache_purged</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$UrlFilter">PHPCrawler::$UrlFilter</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$url_cache_type">PHPCrawler::$url_cache_type</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$UserSendDataCache">PHPCrawler::$UserSendDataCache</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$working_base_directory">PHPCrawler::$working_base_directory</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpcrawl/PHPCrawler.html#var$working_directory">PHPCrawler::$working_directory</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddURL_Entry" id="addURL_Entry"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURL_Entry</span> (line <span class="line-number">86</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">add URL entry <a href="../phpcrawl/SMCCrawler.html#var$entries">$entries</a></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 3 Crawler</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addURL_Entry
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$entry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entry</span><span class="var-description">: URL set to be added to sitemap</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenableLastModifiedCount" id="enableLastModifiedCount"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableLastModifiedCount</span> (line <span class="line-number">96</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enable or diable last-Modified calculation <a href="../phpcrawl/SMCCrawler.html#var$LastModifiedCount">$LastModifiedCount</a></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 3 Crawler</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			enableLastModifiedCount
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span><span class="var-description">: trure to enable, false otherwise</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetLastModified" id="getLastModified"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLastModified</span> (line <span class="line-number">66</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">get Last-Modified header</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 3 Crawler</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getLastModified
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$entry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+				<span class="var-name">$PageInfo</span><span class="var-description">: A PHPCrawlerDocumentInfo-object containing all information about the currently received document.</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$entry</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhandleDocumentInfo" id="handleDocumentInfo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">handleDocumentInfo</span> (line <span class="line-number">48</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">get access to all information about a page or file the crawler found and received.</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 3 Crawler</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			handleDocumentInfo
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+				<span class="var-name">$PageInfo</span><span class="var-description">: A PHPCrawlerDocumentInfo-object containing all information about the currently received document.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpcrawl/PHPCrawler.html#methodhandleDocumentInfo">PHPCrawler::handleDocumentInfo()</a></dt>
+						<dd>Override this method to get access to all information about a page or file the crawler found and received.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../phpcrawl/PHPCrawler.html">PHPCrawler</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#method__construct">PHPCrawler::__construct()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddBasicAuthentication">PHPCrawler::addBasicAuthentication()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddContentTypeReceiveRule">PHPCrawler::addContentTypeReceiveRule()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddFollowMatch">PHPCrawler::addFollowMatch()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddLinkExtractionTags">PHPCrawler::addLinkExtractionTags()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddLinkPriority">PHPCrawler::addLinkPriority()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddLinkSearchContentType">PHPCrawler::addLinkSearchContentType()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddNonFollowMatch">PHPCrawler::addNonFollowMatch()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddPostData">PHPCrawler::addPostData()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddReceiveContentType">PHPCrawler::addReceiveContentType()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddReceiveToMemoryMatch">PHPCrawler::addReceiveToMemoryMatch()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddReceiveToTmpFileMatch">PHPCrawler::addReceiveToTmpFileMatch()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddStreamToFileContentType">PHPCrawler::addStreamToFileContentType()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddURLFilterRule">PHPCrawler::addURLFilterRule()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodaddURLFollowRule">PHPCrawler::addURLFollowRule()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodcheckForAbort">PHPCrawler::checkForAbort()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodcleanup">PHPCrawler::cleanup()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodcreateWorkingDirectory">PHPCrawler::createWorkingDirectory()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methoddisableExtendedLinkInfo">PHPCrawler::disableExtendedLinkInfo()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodenableAggressiveLinkSearch">PHPCrawler::enableAggressiveLinkSearch()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodenableCookieHandling">PHPCrawler::enableCookieHandling()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodenableResumption">PHPCrawler::enableResumption()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodgetCrawlerId">PHPCrawler::getCrawlerId()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodgetProcessReport">PHPCrawler::getProcessReport()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodgetReport">PHPCrawler::getReport()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodgo">PHPCrawler::go()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodgoMultiProcessed">PHPCrawler::goMultiProcessed()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodhandleDocumentInfo">PHPCrawler::handleDocumentInfo()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodhandleHeaderInfo">PHPCrawler::handleHeaderInfo()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodhandlePageData">PHPCrawler::handlePageData()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodinitChildProcess">PHPCrawler::initChildProcess()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodinitCrawlerProcess">PHPCrawler::initCrawlerProcess()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodobeyNoFollowTags">PHPCrawler::obeyNoFollowTags()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodobeyRobotsTxt">PHPCrawler::obeyRobotsTxt()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodprocessRobotsTxt">PHPCrawler::processRobotsTxt()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodprocessUrl">PHPCrawler::processUrl()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodresume">PHPCrawler::resume()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetAggressiveLinkExtraction">PHPCrawler::setAggressiveLinkExtraction()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetConnectionTimeout">PHPCrawler::setConnectionTimeout()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetContentSizeLimit">PHPCrawler::setContentSizeLimit()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetCookieHandling">PHPCrawler::setCookieHandling()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetFollowMode">PHPCrawler::setFollowMode()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetFollowRedirects">PHPCrawler::setFollowRedirects()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetFollowRedirectsTillContent">PHPCrawler::setFollowRedirectsTillContent()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetLinkExtractionTags">PHPCrawler::setLinkExtractionTags()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetPageLimit">PHPCrawler::setPageLimit()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetPort">PHPCrawler::setPort()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetProxy">PHPCrawler::setProxy()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetStreamTimeout">PHPCrawler::setStreamTimeout()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetTmpFile">PHPCrawler::setTmpFile()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetTrafficLimit">PHPCrawler::setTrafficLimit()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetURL">PHPCrawler::setURL()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetUrlCacheType">PHPCrawler::setUrlCacheType()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetUserAgentString">PHPCrawler::setUserAgentString()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodsetWorkingDirectory">PHPCrawler::setWorkingDirectory()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodstarControllerProcessLoop">PHPCrawler::starControllerProcessLoop()</a></span><br>
+													<span class="method-name"><a href="../phpcrawl/PHPCrawler.html#methodstartChildProcessLoop">PHPCrawler::startChildProcessLoop()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:51 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

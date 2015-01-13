@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerUserSendDataCache</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerUserSendDataCache</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cache for storing user-data to send with requests, like cookies, post-data  and basic-authentications.</p>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---PHPCrawlerUserSendDataCache.class.php.html">/libs/PHPCrawler/PHPCrawlerUserSendDataCache.class.php</a> (line <span class="field">9</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$basic_authentications" title="details" class="var-name">$basic_authentications</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$post_data" title="details" class="var-name">$post_data</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																				
+												<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addBasicAuthentication" title="details" class="method-name">addBasicAuthentication</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addPostData" title="details" class="method-name">addPostData</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$post_data_array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getBasicAuthenticationForUrl" title="details" class="method-name">getBasicAuthenticationForUrl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getPostDataForUrl" title="details" class="method-name">getPostDataForUrl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$basic_authentications" id="$basic_authentications"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$basic_authentications</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">16</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array containing basic-authentications to send.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$post_data" id="$post_data"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$post_data</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array containing post-data to send.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddBasicAuthentication" id="addBasicAuthentication"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addBasicAuthentication</span> (line <span class="line-number">89</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a basic-authentication (username and password) to the list of authentications that will be send  with requests.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addBasicAuthentication
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url_regex</span><span class="var-description">: Regular expression defining the URL(s) the authentication should be send to.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: The username</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: The password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddPostData" id="addPostData"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addPostData</span> (line <span class="line-number">32</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds post-data together with an URL-regex to the list of post-data to send with requests.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addPostData
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$post_data_array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url_regex</span><span class="var-description">: Regular expression defining the URL(s) the post-data should be send to.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$post_data_array</span><span class="var-description">: Post-data-array, the keys are the post-data-keys, the values the post-values.                                 (like array(&quot;key1&quot; =&gt; &quot;value1&quot;, &quot;key2&quot; =&gt; &quot;value2&quot;)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBasicAuthenticationForUrl" id="getBasicAuthenticationForUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBasicAuthenticationForUrl</span> (line <span class="line-number">115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the basic-authentication (username and password) that should be send to the given URL.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array containing the keys &quot;username&quot; and &quot;password&quot;.                Returns NULL if no authentication was found in cache for the given URL.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getBasicAuthenticationForUrl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: The URL.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetPostDataForUrl" id="getPostDataForUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPostDataForUrl</span> (line <span class="line-number">63</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the post-data (key and value) that should be send to the given URL.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array containing the post_keys as keys and the values as values.                (like array(&quot;key1&quot; =&gt; &quot;value1&quot;, &quot;key2&quot; =&gt; &quot;value2&quot;)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getPostDataForUrl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: The URL.</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

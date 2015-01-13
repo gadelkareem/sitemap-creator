@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerProcessReport</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerProcessReport</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Contains summarizing information about a crawling-process after the process is finished.</p>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---PHPCrawlerProcessReport.class.php.html">/libs/PHPCrawler/PHPCrawlerProcessReport.class.php</a> (line <span class="field">7</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$abort_reason" title="details" class="var-name">$abort_reason</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$bytes_received" title="details" class="var-name">$bytes_received</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">float</span>
+					<a href="#$data_throughput" title="details" class="var-name">$data_throughput</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$files_received" title="details" class="var-name">$files_received</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$file_limit_reached" title="details" class="var-name">$file_limit_reached</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$links_followed" title="details" class="var-name">$links_followed</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$memory_peak_usage" title="details" class="var-name">$memory_peak_usage</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">float</span>
+					<a href="#$process_runtime" title="details" class="var-name">$process_runtime</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$traffic_limit_reached" title="details" class="var-name">$traffic_limit_reached</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$user_abort" title="details" class="var-name">$user_abort</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												
+												<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#toArray" title="details" class="method-name">toArray</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$abort_reason" id="$abort_reason"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$abort_reason</span>
+						(line <span class="line-number">77</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reason for the abortion of the crawling-process</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> One of the <a href="../phpcrawl-enums/PHPCrawlerAbortReasons.html">PHPCrawlerAbortReasons</a>-constants</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$bytes_received" id="$bytes_received"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$bytes_received</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">28</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The total number of bytes the crawler received alltogether.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$data_throughput" id="$data_throughput"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">float</span>
+			<span class="var-name">$data_throughput</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The average data-throughput in bytes per second.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$files_received" id="$files_received"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$files_received</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">21</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The total number of documents the crawler received.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$file_limit_reached" id="$file_limit_reached"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$file_limit_reached</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">56</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Will be TRUE if the page/file-limit was reached.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$links_followed" id="$links_followed"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$links_followed</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">14</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The total number of links/URLs the crawler found and followed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$memory_peak_usage" id="$memory_peak_usage"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$memory_peak_usage</span>
+						(line <span class="line-number">70</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The peak memory-usage the crawling-process caused.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Memory-usage in bytes. May be NULL if PHP-version is lower than 5.2.0.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$process_runtime" id="$process_runtime"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">float</span>
+			<span class="var-name">$process_runtime</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">35</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The total time the crawling-process was running in seconds.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Proess-runtime in seconds.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$traffic_limit_reached" id="$traffic_limit_reached"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$traffic_limit_reached</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">49</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Will be TRUE if the crawling-process stopped becaus the traffic-limit was reached.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$user_abort" id="$user_abort"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$user_abort</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">63</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Will be TRUE if the crawling-process stopped because the overridable function handleDocumentInfo() returned a negative value.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodtoArray" id="toArray"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">toArray</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array with all properties of this class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			toArray
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

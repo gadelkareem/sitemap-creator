@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerUtils</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerUtils</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Static util-methods used by phpcrawl.</p>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---PHPCrawlerUtils.class.php.html">/libs/PHPCrawler/PHPCrawlerUtils.class.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#buildURLFromLink" title="details" class="method-name">buildURLFromLink</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$link</span>, <span class="var-type"><a href="../phpcrawl/PHPCrawlerUrlPartsDescriptor.html">PHPCrawlerUrlPartsDescriptor</a></span>&nbsp;<span class="var-name">$BaseUrlParts</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#buildURLFromParts" title="details" class="method-name">buildURLFromParts</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$url_parts</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$normalize</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">bool</span>
+										<a href="#checkRegexPattern" title="details" class="method-name">checkRegexPattern</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$pattern</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">bool</span>
+										<a href="#checkStringAgainstRegexArray" title="details" class="method-name">checkStringAgainstRegexArray</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$string</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$regex_array</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">$string</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">mixed</span>
+										<a href="#deserializeFromFile" title="details" class="method-name">deserializeFromFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getBaseUrlFromMetaTag" title="details" class="method-name">getBaseUrlFromMetaTag</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$html_source</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">array</span>
+										<a href="#getCookiesFromHeader" title="details" class="method-name">getCookiesFromHeader</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$source_url</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getHeaderValue" title="details" class="method-name">getHeaderValue</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$directive</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">int</span>
+										<a href="#getHTTPStatusCode" title="details" class="method-name">getHTTPStatusCode</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">array</span>
+										<a href="#getMetaTagAttributes" title="details" class="method-name">getMetaTagAttributes</a>
+											(<span class="var-type">&string</span>&nbsp;<span class="var-name">&$html_source</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getRedirectURLFromHeader" title="details" class="method-name">getRedirectURLFromHeader</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$header</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getRootUrl" title="details" class="method-name">getRootUrl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getSystemTempDir" title="details" class="method-name">getSystemTempDir</a>
+										()
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">bool</span>
+										<a href="#isUTF8String" title="details" class="method-name">isUTF8String</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">bool</span>
+										<a href="#isValidUrlString" title="details" class="method-name">isValidUrlString</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#normalizeURL" title="details" class="method-name">normalizeURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#rmDir" title="details" class="method-name">rmDir</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$dir</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#serializeToFile" title="details" class="method-name">serializeToFile</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$target_file</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#sort2dArray" title="details" class="method-name">sort2dArray</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$array</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$sort_args</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">array</span>
+										<a href="#splitURL" title="details" class="method-name">splitURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+								
+																																																																																																																																																																				</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodbuildURLFromLink" id="buildURLFromLink"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method buildURLFromLink</span> (line <span class="line-number">228</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reconstructs a full qualified and normalized URL from a given link relating to the URL the link was found in.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The rebuild, full qualified and normilazed URL the link is leading to (i.e. &quot;http://www.foo.com/page.htm&quot;)                 Or NULL if the link couldn't be rebuild correctly.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			buildURLFromLink
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$link</span>, <span class="var-type"><a href="../phpcrawl/PHPCrawlerUrlPartsDescriptor.html">PHPCrawlerUrlPartsDescriptor</a></span>&nbsp;<span class="var-name">$BaseUrlParts</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$link</span><span class="var-description">: The link (i.e. &quot;../page.htm&quot;)</span>			</li>
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerUrlPartsDescriptor.html">PHPCrawlerUrlPartsDescriptor</a></span>
+				<span class="var-name">$BaseUrlParts</span><span class="var-description">: The parts of the URL the link was found in (i.e. &quot;http://www.foo.com/folder/index.html&quot;)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuildURLFromParts" id="buildURLFromParts"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method buildURLFromParts</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds an URL from it's single parts.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The URL</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			buildURLFromParts
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$url_parts</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$normalize</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$url_parts</span><span class="var-description">: <p>Array conatining the URL-parts.                          The keys should be:</p><p>&quot;protocol&quot; (z.B. &quot;http://&quot;) OPTIONAL                          &quot;host&quot;     (z.B. &quot;www.bla.de&quot;)                          &quot;path&quot;     (z.B. &quot;/test/palimm/&quot;) OPTIONAL                          &quot;file&quot;     (z.B. &quot;index.htm&quot;) OPTIONAL                          &quot;port&quot;     (z.B. 80) OPTIONAL                          &quot;auth_username&quot; OPTIONAL                          &quot;auth_password&quot; OPTIONAL</p></span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$normalize</span><span class="var-description">: If TRUE, the URL will be returned normalized.                           (I.e. http://www.foo.com/path/ insetad of http://www.foo.com:80/path/)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckRegexPattern" id="checkRegexPattern"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method checkRegexPattern</span> (line <span class="line-number">194</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a given RegEx-pattern is valid or not.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			checkRegexPattern
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$pattern</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pattern</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckStringAgainstRegexArray" id="checkStringAgainstRegexArray"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method checkStringAgainstRegexArray</span> (line <span class="line-number">388</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a given string matches with one of the given regular-expressions.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if one of the regexes matches the string, otherwise FALSE.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			checkStringAgainstRegexArray
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$string</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$regex_array</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">$string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">&string</span>
+				<span class="var-name">$string</span><span class="var-description">: The string</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$regex_array</span><span class="var-description">: Numerich array containing the regular-expressions to check against.</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeserializeFromFile" id="deserializeFromFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method deserializeFromFile</span> (line <span class="line-number">506</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns deserialized data that is stored in a file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The data or NULL if the file doesn't exist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			deserializeFromFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: The file containing the serialized data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBaseUrlFromMetaTag" id="getBaseUrlFromMetaTag"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getBaseUrlFromMetaTag</span> (line <span class="line-number">350</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the base-URL specified in a meta-tag in the given HTML-source</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The base-URL or NULL if not found.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBaseUrlFromMetaTag
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$html_source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$html_source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetCookiesFromHeader" id="getCookiesFromHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getCookiesFromHeader</span> (line <span class="line-number">435</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns all cookies from the give response-header.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Numeric array containing all cookies as PHPCrawlerCookieDescriptor-objects.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getCookiesFromHeader
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$source_url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$header</span><span class="var-description">: The response-header</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source_url</span><span class="var-description">: URL the cookie was send from.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetHeaderValue" id="getHeaderValue"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getHeaderValue</span> (line <span class="line-number">416</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the value of an header-directive from the given HTTP-header.</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line"><span class="src-id"><a href="../phpcrawl/PHPCrawlerUtils.html">PHPCrawlerUtils</a></span><span class="src-sym">::</span><a href="../phpcrawl/PHPCrawlerUtils.html#methodgetHeaderValue">getHeaderValue</a><span class="src-sym">(</span><span class="src-var">$header</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;content-type&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The value of the given directive found in the header.                 Or NULL if not found.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getHeaderValue
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$directive</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$header</span><span class="var-description">: The HTTP-header</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$directive</span><span class="var-description">: The header-directive</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetHTTPStatusCode" id="getHTTPStatusCode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getHTTPStatusCode</span> (line <span class="line-number">207</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the HTTP-statuscode from a given response-header.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The status-code or NULL if no status-code was found.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getHTTPStatusCode
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$header</span><span class="var-description">: The response-header</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMetaTagAttributes" id="getMetaTagAttributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getMetaTagAttributes</span> (line <span class="line-number">586</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all meta-tag atteributes from the given HTML-source.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Assoziative array conatining all found meta-attributes.                The keys are the meta-names, the values the content of the attributes.                (like $tags[&quot;robots&quot;] = &quot;nofollow&quot;)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getMetaTagAttributes
+		</span>
+					(<span class="var-type">&string</span>&nbsp;<span class="var-name">&$html_source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">&string</span>
+				<span class="var-name">&$html_source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetRedirectURLFromHeader" id="getRedirectURLFromHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getRedirectURLFromHeader</span> (line <span class="line-number">367</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the redirect-URL from the given HTML-header</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The redirect-URL or NULL if not found.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getRedirectURLFromHeader
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$header</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$header</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetRootUrl" id="getRootUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getRootUrl</span> (line <span class="line-number">458</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the normalized root-URL of the given URL</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The root-URL, e.g. &quot;http://www.foo.com&quot;</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getRootUrl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: The URL, e.g. &quot;www.foo.con/something/index.html&quot;</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSystemTempDir" id="getSystemTempDir"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getSystemTempDir</span> (line <span class="line-number">568</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Determinates the systems temporary-directory.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSystemTempDir
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisUTF8String" id="isUTF8String"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method isUTF8String</span> (line <span class="line-number">614</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks wether the given string is an UTF8-encoded string.</p>
+<p class="description"><p>Taken from http://www.php.net/manual/de/function.mb-detect-encoding.php  (comment from &quot;prgss at bk dot ru&quot;)</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the string is UTF-8 encoded.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isUTF8String
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$string</span><span class="var-description">: The string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisValidUrlString" id="isValidUrlString"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method isValidUrlString</span> (line <span class="line-number">630</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the given string is a valid, urlencoded URL (by RFC)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the string is a valid url-string.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isValidUrlString
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$string</span><span class="var-description">: The string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnormalizeURL" id="normalizeURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method normalizeURL</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Normalizes an URL</p>
+<p class="description"><p>I.e. converts http://www.foo.com:80/path/ to http://www.foo.com/path/</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> OR NULL on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			normalizeURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrmDir" id="rmDir"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method rmDir</span> (line <span class="line-number">469</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Deletes a directory recursivly</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rmDir
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$dir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$dir</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodserializeToFile" id="serializeToFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method serializeToFile</span> (line <span class="line-number">493</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Serializes data (objects, arrayse etc.) and writes it to the given file.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			serializeToFile
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$target_file</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$target_file</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsort2dArray" id="sort2dArray"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method sort2dArray</span> (line <span class="line-number">519</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sorts a twodimensiolnal array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sort2dArray
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$array</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$sort_args</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$array</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sort_args</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsplitURL" id="splitURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method splitURL</span> (line <span class="line-number">27</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Splits an URL into its parts</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> <p>An array containig the parts of the URL</p><p>The keys are:</p><p>&quot;protocol&quot; (z.B. &quot;http://&quot;)                      &quot;host&quot;     (z.B. &quot;www.bla.de&quot;)                      &quot;path&quot;     (z.B. &quot;/test/palimm/&quot;)                      &quot;file&quot;     (z.B. &quot;index.htm&quot;)                      &quot;domain&quot;   (z.B. &quot;foo.com&quot;)                      &quot;port&quot;     (z.B. 80)                      &quot;auth_username&quot;                      &quot;auth_password&quot;</p></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">array</span>
+		<span class="method-name">
+			splitURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: The URL</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

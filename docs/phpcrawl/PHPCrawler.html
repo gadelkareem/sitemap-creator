@@ -1,0 +1,3006 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawler</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawler</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">PHPCrawl mainclass</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Uwe Hunfeld (phpcrawl@cuab.de)</li>
+				<li><span class="field">version:</span> 0.81</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---PHPCrawler.class.php.html">/libs/PHPCrawler/PHPCrawler.class.php</a> (line <span class="field">10</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpcrawl/SMCCrawler.html">SMCCrawler</a></td>
+					<td>
+											Loading external PHPCrawler-class
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																																																																																																																																																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$child_process_number" title="details" class="var-name">$child_process_number</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$class_version" title="details" class="var-name">$class_version</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">PHPCrawlerCookieCache</span>
+					<a href="#$CookieCache" title="details" class="var-name">$CookieCache</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$cookie_handling_enabled" title="details" class="var-name">$cookie_handling_enabled</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$crawler_uniqid" title="details" class="var-name">$crawler_uniqid</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfoQueue.html">PHPCrawlerDocumentInfoQueue</a></span>
+					<a href="#$DocumentInfoQueue" title="details" class="var-name">$DocumentInfoQueue</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$document_limit" title="details" class="var-name">$document_limit</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$follow_redirects_till_content" title="details" class="var-name">$follow_redirects_till_content</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$is_chlid_process" title="details" class="var-name">$is_chlid_process</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$is_parent_process" title="details" class="var-name">$is_parent_process</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">PHPCrawlerURLCache</span>
+					<a href="#$LinkCache" title="details" class="var-name">$LinkCache</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$link_priority_array" title="details" class="var-name">$link_priority_array</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$multiprocess_mode" title="details" class="var-name">$multiprocess_mode</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$obey_robots_txt" title="details" class="var-name">$obey_robots_txt</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$only_count_received_documents" title="details" class="var-name">$only_count_received_documents</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerHTTPRequest.html">PHPCrawlerHTTPRequest</a></span>
+					<a href="#$PageRequest" title="details" class="var-name">$PageRequest</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$porcess_abort_reason" title="details" class="var-name">$porcess_abort_reason</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerProcessCommunication.html">PHPCrawlerProcessCommunication</a></span>
+					<a href="#$ProcessCommunication" title="details" class="var-name">$ProcessCommunication</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfoQueue.html">PHPCrawlerDocumentInfoQueue</a></span>
+					<a href="#$resumtion_enabled" title="details" class="var-name">$resumtion_enabled</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerRobotsTxtParser.html">PHPCrawlerRobotsTxtParser</a></span>
+					<a href="#$RobotsTxtParser" title="details" class="var-name">$RobotsTxtParser</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$starting_url" title="details" class="var-name">$starting_url</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$traffic_limit" title="details" class="var-name">$traffic_limit</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$urlcache_purged" title="details" class="var-name">$urlcache_purged</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLFilter.html">PHPCrawlerURLFilter</a></span>
+					<a href="#$UrlFilter" title="details" class="var-name">$UrlFilter</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$url_cache_type" title="details" class="var-name">$url_cache_type</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerUserSendDataCache.html">PHPCrawlerUserSendDataCache</a></span>
+					<a href="#$UserSendDataCache" title="details" class="var-name">$UserSendDataCache</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$working_base_directory" title="details" class="var-name">$working_base_directory</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$working_directory" title="details" class="var-name">$working_directory</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">PHPCrawler</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addBasicAuthentication" title="details" class="method-name">addBasicAuthentication</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addContentTypeReceiveRule" title="details" class="method-name">addContentTypeReceiveRule</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addFollowMatch" title="details" class="method-name">addFollowMatch</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addLinkExtractionTags" title="details" class="method-name">addLinkExtractionTags</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addLinkPriority" title="details" class="method-name">addLinkPriority</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$level</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addLinkSearchContentType" title="details" class="method-name">addLinkSearchContentType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addNonFollowMatch" title="details" class="method-name">addNonFollowMatch</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addPostData" title="details" class="method-name">addPostData</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$post_data_array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addReceiveContentType" title="details" class="method-name">addReceiveContentType</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addReceiveToMemoryMatch" title="details" class="method-name">addReceiveToMemoryMatch</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addReceiveToTmpFileMatch" title="details" class="method-name">addReceiveToTmpFileMatch</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addStreamToFileContentType" title="details" class="method-name">addStreamToFileContentType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addURLFilterRule" title="details" class="method-name">addURLFilterRule</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addURLFollowRule" title="details" class="method-name">addURLFollowRule</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#checkForAbort" title="details" class="method-name">checkForAbort</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#cleanup" title="details" class="method-name">cleanup</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#createWorkingDirectory" title="details" class="method-name">createWorkingDirectory</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#disableExtendedLinkInfo" title="details" class="method-name">disableExtendedLinkInfo</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#enableAggressiveLinkSearch" title="details" class="method-name">enableAggressiveLinkSearch</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#enableCookieHandling" title="details" class="method-name">enableCookieHandling</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#enableResumption" title="details" class="method-name">enableResumption</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getCrawlerId" title="details" class="method-name">getCrawlerId</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../phpcrawl/PHPCrawlerProcessReport.html">PHPCrawlerProcessReport</a></span>
+										<a href="#getProcessReport" title="details" class="method-name">getProcessReport</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getReport" title="details" class="method-name">getReport</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#go" title="details" class="method-name">go</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#goMultiProcessed" title="details" class="method-name">goMultiProcessed</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$process_count</span> = <span class="var-default">3</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$multiprocess_mode</span> = <span class="var-default">1</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#handleDocumentInfo" title="details" class="method-name">handleDocumentInfo</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#handleHeaderInfo" title="details" class="method-name">handleHeaderInfo</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerResponseHeader.html">PHPCrawlerResponseHeader</a></span>&nbsp;<span class="var-name">$header</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#handlePageData" title="details" class="method-name">handlePageData</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">&$page_data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#initChildProcess" title="details" class="method-name">initChildProcess</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#initCrawlerProcess" title="details" class="method-name">initCrawlerProcess</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#obeyNoFollowTags" title="details" class="method-name">obeyNoFollowTags</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#obeyRobotsTxt" title="details" class="method-name">obeyRobotsTxt</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#processRobotsTxt" title="details" class="method-name">processRobotsTxt</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#processUrl" title="details" class="method-name">processUrl</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#resume" title="details" class="method-name">resume</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$crawler_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAggressiveLinkExtraction" title="details" class="method-name">setAggressiveLinkExtraction</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setConnectionTimeout" title="details" class="method-name">setConnectionTimeout</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setContentSizeLimit" title="details" class="method-name">setContentSizeLimit</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$bytes</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCookieHandling" title="details" class="method-name">setCookieHandling</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setFollowMode" title="details" class="method-name">setFollowMode</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$follow_mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setFollowRedirects" title="details" class="method-name">setFollowRedirects</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setFollowRedirectsTillContent" title="details" class="method-name">setFollowRedirectsTillContent</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setLinkExtractionTags" title="details" class="method-name">setLinkExtractionTags</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tag_array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setPageLimit" title="details" class="method-name">setPageLimit</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$limit</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$only_count_received_documents</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setPort" title="details" class="method-name">setPort</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setProxy" title="details" class="method-name">setProxy</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$proxy_host</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$proxy_port</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$proxy_username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$proxy_password</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setStreamTimeout" title="details" class="method-name">setStreamTimeout</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setTmpFile" title="details" class="method-name">setTmpFile</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tmp_file</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setTrafficLimit" title="details" class="method-name">setTrafficLimit</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$bytes</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$complete_requested_files</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setURL" title="details" class="method-name">setURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setUrlCacheType" title="details" class="method-name">setUrlCacheType</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$url_cache_type</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUserAgentString" title="details" class="method-name">setUserAgentString</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$user_agent</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setWorkingDirectory" title="details" class="method-name">setWorkingDirectory</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$directory</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#starControllerProcessLoop" title="details" class="method-name">starControllerProcessLoop</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#startChildProcessLoop" title="details" class="method-name">startChildProcessLoop</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$child_process_number" id="$child_process_number"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$child_process_number</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">152</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of child-process (NOT the PID!)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$class_version" id="$class_version"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$class_version</span>
+			 = <span class="var-default"> &quot;0.81&quot;</span>			(line <span class="line-number">12</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$CookieCache" id="$CookieCache"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">PHPCrawlerCookieCache</span>
+			<span class="var-name">$CookieCache</span>
+						(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The PHPCrawlerCookieCache-Object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$cookie_handling_enabled" id="$cookie_handling_enabled"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$cookie_handling_enabled</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number">98</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag cookie-handling enabled/diabled</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$crawler_uniqid" id="$crawler_uniqid"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$crawler_uniqid</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">129</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">UID of this instance of the crawler</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$DocumentInfoQueue" id="$DocumentInfoQueue"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfoQueue.html">PHPCrawlerDocumentInfoQueue</a></span>
+			<span class="var-name">$DocumentInfoQueue</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">173</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">DocumentInfoQueue-object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$document_limit" id="$document_limit"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$document_limit</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">77</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Limit of documents to receive</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$follow_redirects_till_content" id="$follow_redirects_till_content"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$follow_redirects_till_content</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number">175</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$is_chlid_process" id="$is_chlid_process"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$is_chlid_process</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">110</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag indicating whether this instance is running in a child-process (if crawler runs multi-processed)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$is_parent_process" id="$is_parent_process"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$is_parent_process</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">115</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag indicating whether this instance is running in the parent-process (if crawler runs multi-processed)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$LinkCache" id="$LinkCache"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">PHPCrawlerURLCache</span>
+			<span class="var-name">$LinkCache</span>
+						(line <span class="line-number">26</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The PHPCrawlerLinkCache-Object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$link_priority_array" id="$link_priority_array"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$link_priority_array</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">145</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$multiprocess_mode" id="$multiprocess_mode"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$multiprocess_mode</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">166</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Multiprocess-mode the crawler is runnung in.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> One of the PHPCrawlerMultiProcessModes-constants</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$obey_robots_txt" id="$obey_robots_txt"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$obey_robots_txt</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">70</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Defines whether robots.txt-file should be obeyed</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$only_count_received_documents" id="$only_count_received_documents"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$only_count_received_documents</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number">91</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Defines if only documents that were received will be counted.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$PageRequest" id="$PageRequest"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerHTTPRequest.html">PHPCrawlerHTTPRequest</a></span>
+			<span class="var-name">$PageRequest</span>
+						(line <span class="line-number">19</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The PHPCrawlerHTTPRequest-Object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$porcess_abort_reason" id="$porcess_abort_reason"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$porcess_abort_reason</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">105</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The reason why the process was aborted/finished.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> One of the PHPCrawlerAbortReasons::ABORTREASON-constants.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$ProcessCommunication" id="$ProcessCommunication"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerProcessCommunication.html">PHPCrawlerProcessCommunication</a></span>
+			<span class="var-name">$ProcessCommunication</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">159</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">ProcessCommunication-object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$resumtion_enabled" id="$resumtion_enabled"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfoQueue.html">PHPCrawlerDocumentInfoQueue</a></span>
+			<span class="var-name">$resumtion_enabled</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">182</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag indicating whether resumtion is activated</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$RobotsTxtParser" id="$RobotsTxtParser"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerRobotsTxtParser.html">PHPCrawlerRobotsTxtParser</a></span>
+			<span class="var-name">$RobotsTxtParser</span>
+						(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The RobotsTxtParser-Object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$starting_url" id="$starting_url"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$starting_url</span>
+			 = <span class="var-default"> &quot;&quot;</span>			(line <span class="line-number">63</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The URL the crawler should start with.</p>
+<p class="description"><p>The URL is full qualified and normalized.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$traffic_limit" id="$traffic_limit"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$traffic_limit</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">84</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Limit of bytes to receive</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The limit in bytes</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$urlcache_purged" id="$urlcache_purged"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$urlcache_purged</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">187</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag indicating whether the URL-cahce was purged at the beginning of a crawling-process</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$UrlFilter" id="$UrlFilter"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLFilter.html">PHPCrawlerURLFilter</a></span>
+			<span class="var-name">$UrlFilter</span>
+						(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The UrlFilter-Object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$url_cache_type" id="$url_cache_type"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$url_cache_type</span>
+			 = <span class="var-default"> 1</span>			(line <span class="line-number">122</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">URl cache-type.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> One of the PHPCrawlerUrlCacheTypes::URLCACHE..-constants.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$UserSendDataCache" id="$UserSendDataCache"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerUserSendDataCache.html">PHPCrawlerUserSendDataCache</a></span>
+			<span class="var-name">$UserSendDataCache</span>
+						(line <span class="line-number">54</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">UserSendDataCahce-object.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$working_base_directory" id="$working_base_directory"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$working_base_directory</span>
+						(line <span class="line-number">136</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Base-directory for temporary directories</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$working_directory" id="$working_directory"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$working_directory</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">143</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Complete path to the temporary directory</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">192</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initiates a new crawler.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">PHPCrawler</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodaddBasicAuthentication" id="addBasicAuthentication"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addBasicAuthentication</span> (line <span class="line-number">1549</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a basic-authentication (username and password) to the list of basic authentications that will be send with requests.</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddBasicAuthentication">addBasicAuthentication</a><span class="src-sym">(</span><span class="src-str">&quot;#http://www\.foo\.com/protected_path/#&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;myusername&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;mypasswd&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  This lets the crawler send the authentication &quot;myusername/mypasswd&quot; with every request for content placed  in the path &quot;protected_path&quot; on the host &quot;www.foo.com&quot;.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addBasicAuthentication
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url_regex</span><span class="var-description">: Regular-expression defining the URL(s) the authentication should be send to.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: The username</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: The password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddContentTypeReceiveRule" id="addContentTypeReceiveRule"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addContentTypeReceiveRule</span> (line <span class="line-number">1182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decides which pages or files - regarding their content-type - should be received</p>
+<p class="description"><p>After receiving the HTTP-header of a followed URL, the crawler check's - based on the given rules - whether the content of that URL  should be received.  If no rule matches with the content-type of the document, the content won't be received.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddContentTypeReceiveRule">addContentTypeReceiveRule</a><span class="src-sym">(</span><span class="src-str">&quot;#text/html#&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddContentTypeReceiveRule">addContentTypeReceiveRule</a><span class="src-sym">(</span><span class="src-str">&quot;#text/css#&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  This rules lets the crawler receive the content/source of pages with the Content-Type &quot;text/html&quot; AND &quot;text/css&quot;.  Other pages or files with different content-types (e.g. &quot;image/gif&quot;) won't be received (if this is the only rule added to the list).</p><p><strong>IMPORTANT:</strong> By default, if no rule was added to the list, the crawler receives every content.</p><p>Note: To reduce the traffic the crawler will cause, you only should add content-types of pages/files you really want to receive.  But at least you should add the content-type &quot;text/html&quot; to this list, otherwise the crawler can't find any links.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the rule was added to the list.               FALSE if the given regex is not valid.</li>
+				<li><span class="field">section:</span> 2 Filter-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addContentTypeReceiveRule
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: The rule as a regular-expression</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddFollowMatch" id="addFollowMatch"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addFollowMatch</span> (line <span class="line-number">1255</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias for addURLFollowRule().</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addFollowMatch
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddLinkExtractionTags" id="addLinkExtractionTags"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addLinkExtractionTags</span> (line <span class="line-number">1525</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the list of html-tags from which links should be extracted from.</p>
+<p class="description"><p>This method was named wrong in previous versions of phpcrawl.  It does not ADD tags, it SETS the tags from which links should be extracted from.</p><p>Example  <div class="src-code"><ol><li><div class="src-line"><span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddLinkExtractionTags">addLinkExtractionTags</a><span class="src-sym">(</span><span class="src-str">&quot;href&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;src&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> Please use setLinkExtractionTags()</li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addLinkExtractionTags
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodaddLinkPriority" id="addLinkPriority"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addLinkPriority</span> (line <span class="line-number">1073</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a regular expression togehter with a priority-level to the list of rules that decide what links should be prefered.</p>
+<p class="description"><p>Links/URLs that match an expression with a high priority-level will be followed before links with a lower level.  All links that don't match with any of the given rules will get the level 0 (lowest level) automatically.</p><p>The level can be any positive integer.</p><p><strong>Example:</strong></p><p>Telling the crawler to follow links that contain the string &quot;forum&quot; before links that contain &quot;.gif&quot; before all other found links.  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddLinkPriority">addLinkPriority</a><span class="src-sym">(</span><span class="src-str">&quot;/forum/&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-num">10</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$cralwer</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddLinkPriority">addLinkPriority</a><span class="src-sym">(</span><span class="src-str">&quot;/\.gif/&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-num">5</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if a valid preg-pattern is given as argument and was succsessfully added, otherwise it returns FALSE.</li>
+				<li><span class="field">section:</span> 10 Other settings</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addLinkPriority
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$level</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: Regular expression definig the rule</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$level</span><span class="var-description">: The priority-level</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddLinkSearchContentType" id="addLinkSearchContentType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addLinkSearchContentType</span> (line <span class="line-number">1700</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decide in what kind of documents the crawler  should search for links in (regarding their content-type)</p>
+<p class="description"><p>By default the crawler ONLY searches for links in documents of type &quot;text/html&quot;.  Use this method to add one or more other content-types the crawler should check for links.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddLinkSearchContentType">addLinkSearchContentType</a><span class="src-sym">(</span><span class="src-str">&quot;#text/css#&nbsp;i&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddLinkSearchContentType">addLinkSearchContentType</a><span class="src-sym">(</span><span class="src-str">&quot;#text/xml#&nbsp;i&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  These rules let the crawler search for links in HTML-, CSS- ans XML-documents.</p><p><strong>Please note:</strong> It is NOT recommended to let the crawler checkfor links in EVERY document-  type! This could slow down the crawling-process dramatically (e.g. if the crawler receives large  binary-files like images and tries to find links in them).</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the rule was successfully added</li>
+				<li><span class="field">section:</span> 6 Linkfinding settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addLinkSearchContentType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: Regular-expression defining the rule</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddNonFollowMatch" id="addNonFollowMatch"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addNonFollowMatch</span> (line <span class="line-number">1267</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias for addURLFilterRule().</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addNonFollowMatch
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddPostData" id="addPostData"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addPostData</span> (line <span class="line-number">1781</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds post-data together with an URL-rule to the list of post-data to send with requests.</p>
+<p class="description"><p>Example  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$post_data&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;username&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;me&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;password&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;my_password&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;action&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;do_login&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddPostData">addPostData</a><span class="src-sym">(</span><span class="src-str">&quot;#http://www\.foo\.com/login.php#&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-var">$post_data</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  This example sends the post-values &quot;username=me&quot;, &quot;password=my_password&quot; and &quot;action=do_login&quot; to the URL  http://www.foo.com/login.php</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addPostData
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url_regex</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$post_data_array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url_regex</span><span class="var-description">: Regular expression defining the URL(s) the post-data should be send to.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$post_data_array</span><span class="var-description">: Post-data-array, the array-keys are the post-data-keys, the array-values the post-values.                                 (like array(&quot;post_key1&quot; =&gt; &quot;post_value1&quot;, &quot;post_key2&quot; =&gt; &quot;post_value2&quot;)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddReceiveContentType" id="addReceiveContentType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addReceiveContentType</span> (line <span class="line-number">1194</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias for addContentTypeReceiveRule().</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addReceiveContentType
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddReceiveToMemoryMatch" id="addReceiveToMemoryMatch"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addReceiveToMemoryMatch</span> (line <span class="line-number">1363</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Has no function anymore!</p>
+<p class="description"><p>This method was redundant, please use addStreamToFileContentType().  It just still exists because of compatibility-reasons.</p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> This method has no function anymore since v 0.8.</li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addReceiveToMemoryMatch
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddReceiveToTmpFileMatch" id="addReceiveToTmpFileMatch"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addReceiveToTmpFileMatch</span> (line <span class="line-number">1349</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias for addStreamToFileContentType().</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addReceiveToTmpFileMatch
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddStreamToFileContentType" id="addStreamToFileContentType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addStreamToFileContentType</span> (line <span class="line-number">1300</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decides what types of content should be streamed diretly to a temporary file.</p>
+<p class="description"><p>If a content-type of a page or file matches with one of these rules, the content will be streamed directly into a  temporary file without claiming local RAM.</p><p>It's recommendend to add all content-types of files that may be of bigger size to prevent memory-overflows.  By default the crawler will receive every content to memory!</p><p>The content/source of pages and files that were streamed to file are not accessible directly within the overidden method  <a href="../phpcrawl/PHPCrawler.html#methodhandleDocumentInfo">handleDocumentInfo()</a>, instead you get information about the file the content was stored in.  (see properties PHPCrawlerDocumentInfo::received_to_file and PHPCrawlerDocumentInfo::content_tmp_file).</p><p>Please note that this setting doesn't effect the link-finding results, also file-streams will be checked for links.</p><p>A common setup may look like this example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Basically&nbsp;let&nbsp;the&nbsp;crawler&nbsp;receive&nbsp;every&nbsp;content&nbsp;(default-setting)</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddReceiveContentType">addReceiveContentType</a><span class="src-sym">(</span><span class="src-str">&quot;##&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Tell&nbsp;the&nbsp;crawler&nbsp;to&nbsp;stream&nbsp;everything&nbsp;but&nbsp;&quot;text/html&quot;-documents&nbsp;to&nbsp;a&nbsp;tmp-file</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddStreamToFileContentType">addStreamToFileContentType</a><span class="src-sym">(</span><span class="src-str">&quot;#^((?!text/html).)*$#&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the rule was added to the list and the regex is valid.</li>
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addStreamToFileContentType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: The rule as a regular-expression</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddURLFilterRule" id="addURLFilterRule"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURLFilterRule</span> (line <span class="line-number">1243</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decide which URLs found on a page should be ignored by the crawler.</p>
+<p class="description"><p>If the crawler finds an URL and this URL matches with one of the given regular-expressions, the crawler  will ignore this URL and won't follow it.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddURLFilterRule">addURLFilterRule</a><span class="src-sym">(</span><span class="src-str">&quot;#(jpg|jpeg|gif|png|bmp)$#&nbsp;i&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddURLFilterRule">addURLFilterRule</a><span class="src-sym">(</span><span class="src-str">&quot;#(css|js)$#&nbsp;i&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  These rules let the crawler ignore URLs that end with &quot;jpg&quot;, &quot;jpeg&quot;, &quot;gif&quot;, ..., &quot;css&quot;  and &quot;js&quot;.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the regex is valid and the rule was added to the list, otherwise FALSE.</li>
+				<li><span class="field">section:</span> 2 Filter-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addURLFilterRule
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: Regular-expression defining the rule</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddURLFollowRule" id="addURLFollowRule"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURLFollowRule</span> (line <span class="line-number">1220</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decide which URLs found on a page should be followd explicitly.</p>
+<p class="description"><p>If the crawler finds an URL and this URL doesn't match with any of the given regular-expressions, the crawler  will ignore this URL and won't follow it.</p><p>NOTE: By default and if no rule was added to this list, the crawler will NOT filter ANY URLs, every URL the crawler finds  will be followed (except the ones &quot;excluded&quot; by other options of course).</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddURLFollowRule">addURLFollowRule</a><span class="src-sym">(</span><span class="src-str">&quot;#(htm|html)$#&nbsp;i&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodaddURLFollowRule">addURLFollowRule</a><span class="src-sym">(</span><span class="src-str">&quot;#(php|php3|php4|php5)$#&nbsp;i&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  These rules let the crawler ONLY follow URLs/links that end with &quot;html&quot;, &quot;htm&quot;, &quot;php&quot;, &quot;php3&quot; etc.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the regex is valid and the rule was added to the list, otherwise FALSE.</li>
+				<li><span class="field">section:</span> 2 Filter-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addURLFollowRule
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: Regular-expression defining the rule</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckForAbort" id="checkForAbort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkForAbort</span> (line <span class="line-number">730</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if the crawling-process should be aborted.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> NULL if the process shouldn't be aborted yet, otherwise one of the PHPCrawlerAbortReasons::ABORTREASON-constants.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			checkForAbort
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcleanup" id="cleanup"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">cleanup</span> (line <span class="line-number">795</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cleans up the crawler after it has finished.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			cleanup
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcreateWorkingDirectory" id="createWorkingDirectory"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">createWorkingDirectory</span> (line <span class="line-number">775</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the working-directory for this instance of the cralwer.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			createWorkingDirectory
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddisableExtendedLinkInfo" id="disableExtendedLinkInfo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">disableExtendedLinkInfo</span> (line <span class="line-number">1574</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Has no function anymore.</p>
+<p class="description"><p>Thes method has no function anymore, just still exists because of compatibility-reasons.</p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disableExtendedLinkInfo
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenableAggressiveLinkSearch" id="enableAggressiveLinkSearch"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableAggressiveLinkSearch</span> (line <span class="line-number">1477</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables or disables agressive link-searching.</p>
+<p class="description"><p>If this is set to FALSE, the crawler tries to find links only inside html-tags (&lt; and &gt;).  If this is set to TRUE, the crawler tries to find links everywhere in an html-page, even outside of html-tags.  The default value is TRUE.</p><p>Please note that if agressive-link-searching is enabled, it happens that the crawler will find links that are not meant as links and it also happens that it  finds links in script-parts of pages that can't be rebuild correctly - since there is no javascript-parser/interpreter implemented.  (E.g. javascript-code like document.location.href= a_var + &quot;.html&quot;).</p><p>Disabling agressive-link-searchingn results in a better crawling-performance.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 6 Linkfinding settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			enableAggressiveLinkSearch
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenableCookieHandling" id="enableCookieHandling"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableCookieHandling</span> (line <span class="line-number">1441</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables or disables cookie-handling.</p>
+<p class="description"><p>If cookie-handling is set to TRUE, the crawler will handle all cookies sent by webservers just like a common browser does.  The default-value is TRUE.</p><p>It's strongly recommended to set or leave the cookie-handling enabled!</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			enableCookieHandling
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenableResumption" id="enableResumption"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableResumption</span> (line <span class="line-number">1875</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prepares the crawler for process-resumption.</p>
+<p class="description"><p>In order to be able to resume an aborted/terminated crawling-process, it is necessary to  initially call the enableResumption() method in your script/project.</p><p>For further details on how to resume aborted processes please see the documentation of the  <a href="../phpcrawl/PHPCrawler.html#methodresume">resume()</a> method.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 9 Process resumption</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			enableResumption
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCrawlerId" id="getCrawlerId"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCrawlerId</span> (line <span class="line-number">1792</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the unique ID of the instance of the crawler</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 9 Process resumption</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getCrawlerId
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetProcessReport" id="getProcessReport"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getProcessReport</span> (line <span class="line-number">814</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retruns summarizing report-information about the crawling-process after it has finished.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> PHPCrawlerProcessReport-object containing process-summary-information</li>
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpcrawl/PHPCrawlerProcessReport.html">PHPCrawlerProcessReport</a></span>
+		<span class="method-name">
+			getProcessReport
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetReport" id="getReport"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getReport</span> (line <span class="line-number">857</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retruns an array with summarizing report-information after the crawling-process has finished</p>
+<p class="description"><p>For detailed information on the conatining array-keys see PHPCrawlerProcessReport-class.</p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> Please use getProcessReport() instead.</li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getReport
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgo" id="go"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">go</span> (line <span class="line-number">324</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Starts the crawling process in single-process-mode.</p>
+<p class="description"><p>Be sure you did override the <a href="../phpcrawl/PHPCrawler.html#methodhandleDocumentInfo">handleDocumentInfo()</a>- or <a href="../phpcrawl/PHPCrawler.html#methodhandlePageData">handlePageData()</a>-method before calling the go()-method  to process the documents the crawler finds.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			go
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgoMultiProcessed" id="goMultiProcessed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">goMultiProcessed</span> (line <span class="line-number">387</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Starts the cralwer by using multi processes.</p>
+<p class="description"><p>When using this method instead of the <a href="../phpcrawl/PHPCrawler.html#methodgo">go()</a>-method to start the crawler, phpcrawl will use the given  number of processes simultaneously for spidering the target-url.  Using multi processes will speed up the crawling-progress dramatically in most cases.</p><p>There are some requirements though to successfully run the cralwler in multi-process mode:  <ul><li>The multi-process mode only works on unix-based systems (linux)</li><li>Scripts using the crawler have to be run from the commandline (cli)</li><li>The &lt;a href=&quot;http://php.net/manual/en/pcntl.installation.php&quot;&gt;PCNTL-extension&lt;/a&gt; for php (process control) has to be installed and activated.</li><li>The &lt;a href=&quot;http://php.net/manual/en/sem.installation.php&quot;&gt;SEMAPHORE-extension&lt;/a&gt; for php has to be installed and activated.</li><li>The &lt;a href=&quot;http://de.php.net/manual/en/posix.installation.php&quot;&gt;POSIX-extension&lt;/a&gt; for php has to be installed and activated.</li><li>The &lt;a href=&quot;http://de2.php.net/manual/en/pdo.installation.php&quot;&gt;PDO-extension&lt;/a&gt; together with the SQLite-driver (PDO_SQLITE) has to be installed and activated.</li></ul></p><p>PHPCrawls supports two different modes of multiprocessing:  <ol><li><strong><a href="../phpcrawl-enums/PHPCrawlerMultiProcessModes.html">PHPCrawlerMultiProcessModes</a>::MPMODE_PARENT_EXECUTES_USERCODE</strong>
+
+ The cralwer uses multi processes simultaneously for spidering the target URL, but the usercode provided to
+ the overridable function <a href="../phpcrawl/PHPCrawler.html#methodhandleDocumentInfo">handleDocumentInfo()</a> gets always executed on the same main-process. This
+ means that the <strong>usercode never gets executed simultaneously</strong> and so you dont't have to care about
+ concurrent file/database/handle-accesses or smimilar things.
+ But on the other side the usercode may slow down the crawling-procedure because every child-process has to
+ wait until the usercode got executed on the main-process. <strong>This ist the recommended multiprocess-mode!</strong></li><li><strong><a href="../phpcrawl-enums/PHPCrawlerMultiProcessModes.html">PHPCrawlerMultiProcessModes</a>::MPMODE_CHILDS_EXECUTES_USERCODE</strong>
+
+ The cralwer uses multi processes simultaneously for spidering the target URL, and every chld-process executes
+ the usercode provided to the overridable function <a href="../phpcrawl/PHPCrawler.html#methodhandleDocumentInfo">handleDocumentInfo()</a> directly from it's process. This
+ means that the <strong>usercode gets executed simultaneously</strong> by the different child-processes and you should
+ take care of concurrent file/data/handle-accesses proberbly (if used).
+
+ When using this mode and you use any handles like database-connections or filestreams in your extended
+ crawler-class, you should open them within the overridden mehtod <a href="../phpcrawl/PHPCrawler.html#methodinitChildProcess">initChildProcess()</a> instead of opening
+ them from the constructor. For more details see the documentation of the <a href="../phpcrawl/PHPCrawler.html#methodinitChildProcess">initChildProcess()</a>-method.</li></ol></p><p>Example for starting the crawler with 5 processes using the recommended MPMODE_PARENT_EXECUTES_USERCODE-mode:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodgoMultiProcessed">goMultiProcessed</a><span class="src-sym">(</span><span class="src-num">5</span><span class="src-sym">,&nbsp;</span><span class="src-id"><a href="../phpcrawl-enums/PHPCrawlerMultiProcessModes.html">PHPCrawlerMultiProcessModes</a></span><span class="src-sym">::</span><span class="src-id">MPMODE_PARENT_EXECUTES_USERCODE</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p><p>Please note that increasing the number of processes to high values does't automatically mean that the crawling-process  will go off faster! Using 3 to 5 processes should be good values to start from.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			goMultiProcessed
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$process_count</span> = <span class="var-default">3</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$multiprocess_mode</span> = <span class="var-default">1</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$process_count</span><span class="var-description">: Number of processes to use</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$multiprocess_mode</span><span class="var-description">: The multiprocess-mode to use.                                One of the <a href="../phpcrawl-enums/PHPCrawlerMultiProcessModes.html">PHPCrawlerMultiProcessModes</a>-constants</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhandleDocumentInfo" id="handleDocumentInfo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">handleDocumentInfo</span> (line <span class="line-number">990</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override this method to get access to all information about a page or file the crawler found and received.</p>
+<p class="description"><p>Everytime the crawler found and received a document on it's way this method will be called.  The crawler passes all information about the currently received page or file to this method  by a PHPCrawlerDocumentInfo-object.</p><p>Please see the <a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a> documentation for a list of all properties describing the  html-document.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-key">class&nbsp;</span><span class="src-id">MyCrawler&nbsp;</span><span class="src-key">extends&nbsp;</span><a href="../phpcrawl/PHPCrawler.html">PHPCrawler</a></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">handleDocumentInfo</span><span class="src-sym">(</span><span class="src-var">$PageInfo</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;Print&nbsp;the&nbsp;URL&nbsp;of&nbsp;the&nbsp;document</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;URL:&nbsp;&quot;</span>.<span class="src-var">$PageInfo</span><span class="src-sym">-&gt;</span><span class="src-id">url</span>.<span class="src-str">&quot;&lt;br&nbsp;/&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;Print&nbsp;the&nbsp;http-status-code</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;HTTP-statuscode:&nbsp;&quot;</span>.<span class="src-var">$PageInfo</span><span class="src-sym">-&gt;</span><span class="src-id">http_status_code</span>.<span class="src-str">&quot;&lt;br&nbsp;/&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;Print&nbsp;the&nbsp;number&nbsp;of&nbsp;found&nbsp;links&nbsp;in&nbsp;this&nbsp;document</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;Links&nbsp;found:&nbsp;&quot;</span>.<a href="http://www.php.net/count">count</a><span class="src-sym">(</span><span class="src-var">$PageInfo</span><span class="src-sym">-&gt;</span><span class="src-id">links_found_url_descriptors</span><span class="src-sym">)</span>.<span class="src-str">&quot;&lt;br&nbsp;/&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;..</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The crawling-process will stop immedeatly if you let this method return any negative value.</li>
+				<li><span class="field">section:</span> 3 Overridable methods / User data-processing</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			handleDocumentInfo
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$PageInfo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+				<span class="var-name">$PageInfo</span><span class="var-description">: A PHPCrawlerDocumentInfo-object containing all information about the currently received document.                                          Please see the reference of the <a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a>-class for detailed information.</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/SMCCrawler.html#methodhandleDocumentInfo">SMCCrawler::handleDocumentInfo()</a>
+								: get access to all information about a page or file the crawler found and received.
+							</li>
+				</ul>
+	</div>
+<a name="methodhandleHeaderInfo" id="handleHeaderInfo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">handleHeaderInfo</span> (line <span class="line-number">893</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Overridable method that will be called after the header of a document was received and BEFORE the content  will be received.</p>
+<p class="description"><p>Everytime a header of a document was received, the crawler will call this method.  If this method returns any negative integer, the crawler will NOT reveice the content of the particular page or file.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-key">class&nbsp;</span><span class="src-id">MyCrawler&nbsp;</span><span class="src-key">extends&nbsp;</span><a href="../phpcrawl/PHPCrawler.html">PHPCrawler</a></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">handleHeaderInfo</span><span class="src-sym">(</span><span class="src-id">PHPCrawlerResponseHeader&nbsp;</span><span class="src-var">$header</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;If&nbsp;the&nbsp;content-type&nbsp;of&nbsp;the&nbsp;document&nbsp;isn't&nbsp;&quot;text/html&quot;&nbsp;-&gt;&nbsp;don't&nbsp;receive&nbsp;it.</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$header</span><span class="src-sym">-&gt;</span><span class="src-id">content_type&nbsp;</span>!=&nbsp;<span class="src-str">&quot;text/html&quot;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span>-<span class="src-num">1</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">handleDocumentInfo</span><span class="src-sym">(</span><span class="src-var">$PageInfo</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;...</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The document won't be received if you let this method return any negative value.</li>
+				<li><span class="field">section:</span> 3 Overridable methods / User data-processing</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			handleHeaderInfo
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerResponseHeader.html">PHPCrawlerResponseHeader</a></span>&nbsp;<span class="var-name">$header</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerResponseHeader.html">PHPCrawlerResponseHeader</a></span>
+				<span class="var-name">$header</span><span class="var-description">: The header as PHPCrawlerResponseHeader-object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhandlePageData" id="handlePageData"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">handlePageData</span> (line <span class="line-number">952</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override this method to get access to all information about a page or file the crawler found and received.</p>
+<p class="description"><p>Everytime the crawler found and received a document on it's way this method will be called.  The crawler passes all information about the currently received page or file to this method  by the array $page_data.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The crawling-process will stop immedeatly if you let this method return any negative value.</li>
+				<li><span class="field">deprecated:</span> Please use and override the <a href="../phpcrawl/PHPCrawler.html#methodhandleDocumentInfo">handleDocumentInfo</a>-method to access document-information instead.</li>
+				<li><span class="field">section:</span> 3 Overridable methods / User data-processing</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			handlePageData
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">&$page_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$page_data</span><span class="var-description">: Array containing all information about the currently received document.                           For detailed information on the conatining keys see <a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a>-class.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinitChildProcess" id="initChildProcess"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">initChildProcess</span> (line <span class="line-number">935</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Overridable method that will be called by every used child-process just before it starts the crawling-procedure.</p>
+<p class="description"><p>Every child-process of the crawler will call this method just before it starts it's crawling-loop from within it's  process-context.</p><p>So when using the multi-process mode &quot;<a href="../phpcrawl-enums/PHPCrawlerMultiProcessModes.html#constMPMODE_CHILDS_EXECUTES_USERCODE">PHPCrawlerMultiProcessModes::MPMODE_CHILDS_EXECUTES_USERCODE</a>&quot;, this method  should be overidden and used to open any needed database-connections, file streams or other similar handles to ensure  that they will get opened and accessible for every used child-process.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-key">class&nbsp;</span><span class="src-id">MyCrawler&nbsp;</span><span class="src-key">extends&nbsp;</span><a href="../phpcrawl/PHPCrawler.html">PHPCrawler</a></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-key">protected&nbsp;</span><span class="src-var">$mysql_link</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">initChildProcess</span><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;Open&nbsp;a&nbsp;database-connection&nbsp;for&nbsp;every&nbsp;used&nbsp;process</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">mysql_link&nbsp;</span>=&nbsp;<a href="http://www.php.net/mysql_connect">mysql_connect</a><span class="src-sym">(</span><span class="src-str">&quot;myhost&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;myusername&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;mypassword&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/mysql_select_db">mysql_select_db</a>&nbsp;<span class="src-sym">(</span><span class="src-str">&quot;mydatabasename&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">mysql_link</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">handleDocumentInfo</span><span class="src-sym">(</span><span class="src-var">$PageInfo</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/mysql_query">mysql_query</a><span class="src-sym">(</span><span class="src-str">&quot;INSERT&nbsp;INTO&nbsp;urls&nbsp;SET&nbsp;url&nbsp;=&nbsp;'&quot;</span>.<span class="src-var">$PageInfo</span><span class="src-sym">-&gt;</span><span class="src-id">url</span>.<span class="src-str">&quot;';&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">mysql_link</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Start&nbsp;crawler&nbsp;with&nbsp;5&nbsp;processes</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id">MyCrawler</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><span class="src-id">setURL</span><span class="src-sym">(</span><span class="src-str">&quot;http://www.any-url.com&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><span class="src-id">goMultiProcessed</span><span class="src-sym">(</span><span class="src-num">5</span><span class="src-sym">,&nbsp;</span><span class="src-id"><a href="../phpcrawl-enums/PHPCrawlerMultiProcessModes.html">PHPCrawlerMultiProcessModes</a></span><span class="src-sym">::</span><span class="src-id">MPMODE_CHILDS_EXECUTES_USERCODE</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 3 Overridable methods / User data-processing</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			initChildProcess
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinitCrawlerProcess" id="initCrawlerProcess"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">initCrawlerProcess</span> (line <span class="line-number">273</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initiates a crawler-process</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			initCrawlerProcess
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobeyNoFollowTags" id="obeyNoFollowTags"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">obeyNoFollowTags</span> (line <span class="line-number">1758</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Decides whether the crawler should obey &quot;nofollow&quot;-tags</p>
+<p class="description"><p>If set to TRUE, the crawler will not follow links that a marked with rel=&quot;nofollow&quot;  (like &amp;lt;a href=&quot;page.html&quot; rel=&quot;nofollow&quot;&amp;gt;) nor links from pages containing the meta-tag  &lt;meta name=&quot;robots&quot; content=&quot;nofollow&quot;&gt;.</p><p>By default, the crawler will NOT obey nofollow-tags.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 2 Filter-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			obeyNoFollowTags
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span><span class="var-description">: If set to TRUE, the crawler will obey &quot;nofollow&quot;-tags</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobeyRobotsTxt" id="obeyRobotsTxt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">obeyRobotsTxt</span> (line <span class="line-number">1335</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Decides whether the crawler should parse and obey robots.txt-files.</p>
+<p class="description"><p>If this is set to TRUE, the crawler looks for a robots.txt-file for every host that sites or files should be received  from during the crawling process. If a robots.txt-file for a host was found, the containig directives appliying to the  useragent-identification of the cralwer  (&quot;PHPCrawl&quot; or manually set by calling <a href="../phpcrawl/PHPCrawler.html#methodsetUserAgentString">setUserAgentString()</a>) will be obeyed.</p><p>The default-value is FALSE (for compatibility reasons).</p><p>Pleas note that the directives found in a robots.txt-file have a higher priority than other settings made by the user.  If e.g. <a href="../phpcrawl/PHPCrawler.html#methodaddFollowMatch">addFollowMatch</a>(&quot;#http://foo\.com/path/file\.html#&quot;) was set, but a directive in the robots.txt-file of the host  foo.com says &quot;Disallow: /path/&quot;, the URL http://foo.com/path/file.html will be ignored by the crawler anyway.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 2 Filter-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			obeyRobotsTxt
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span><span class="var-description">: Set to TRUE if you want the crawler to obey robots.txt-files.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprocessRobotsTxt" id="processRobotsTxt"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">processRobotsTxt</span> (line <span class="line-number">717</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			processRobotsTxt
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodprocessUrl" id="processUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">processUrl</span> (line <span class="line-number">601</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Receives and processes the given URL</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TURE if the crawling-process should be aborted after processig the URL, otherwise FALSE.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			processUrl
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>
+				<span class="var-name">$UrlDescriptor</span><span class="var-description">: The URL as PHPCrawlerURLDescriptor-object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodresume" id="resume"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">resume</span> (line <span class="line-number">1846</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resumes the crawling-process with the given crawler-ID</p>
+<p class="description"><p>If a crawling-process was aborted (for whatever reasons), it is possible  to resume it by calling the resume()-method before calling the go() or goMultiProcessed() method  and passing the crawler-ID of the aborted process to it (as returned by <a href="../phpcrawl/PHPCrawler.html#methodgetCrawlerId">getCrawlerId()</a>).</p><p>In order to be able to resume a process, it is necessary that it was initially  started with resumption enabled (by calling the <a href="../phpcrawl/PHPCrawler.html#methodenableResumption">enableResumption()</a> method).</p><p>This method throws an exception if resuming of a crawling-process failed.</p><p>Example of a resumeable crawler-script:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;...</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id">MyCrawler</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodenableResumption">enableResumption</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetURL">setURL</a><span class="src-sym">(</span><span class="src-str">&quot;www.url123.com&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;If&nbsp;process&nbsp;was&nbsp;started&nbsp;the&nbsp;first&nbsp;time:</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Get&nbsp;the&nbsp;crawler-ID&nbsp;and&nbsp;store&nbsp;it&nbsp;somewhere&nbsp;in&nbsp;order&nbsp;to&nbsp;be&nbsp;able&nbsp;to&nbsp;resume&nbsp;the&nbsp;process&nbsp;later&nbsp;on</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-sym">!</span><a href="http://www.php.net/file_exists">file_exists</a><span class="src-sym">(</span><span class="src-str">&quot;/tmp/crawlerid_for_url123.tmp&quot;</span><span class="src-sym">))</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-var">$crawler_id&nbsp;</span>=&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodgetCrawlerId">getCrawlerId</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/file_put_contents">file_put_contents</a><span class="src-sym">(</span><span class="src-str">&quot;/tmp/crawlerid_for_url123.tmp&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-var">$crawler_id</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;If&nbsp;process&nbsp;was&nbsp;restarted&nbsp;again&nbsp;(after&nbsp;a&nbsp;termination):</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Read&nbsp;the&nbsp;crawler-id&nbsp;and&nbsp;resume&nbsp;the&nbsp;process</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">else</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-var">$crawler_id&nbsp;</span>=&nbsp;<a href="http://www.php.net/file_get_contents">file_get_contents</a><span class="src-sym">(</span><span class="src-str">&quot;/tmp/crawlerid_for_url123.tmp&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodresume">resume</a><span class="src-sym">(</span><span class="src-var">$crawler_id</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;...</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Start&nbsp;your&nbsp;crawling&nbsp;process</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodgoMultiProcessed">goMultiProcessed</a><span class="src-sym">(</span><span class="src-num">5</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;After&nbsp;the&nbsp;process&nbsp;is&nbsp;finished&nbsp;completely:&nbsp;Delete&nbsp;the&nbsp;crawler-ID</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/unlink">unlink</a><span class="src-sym">(</span><span class="src-str">&quot;/tmp/crawlerid_for_url123.tmp&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 9 Process resumption</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			resume
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$crawler_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$crawler_id</span><span class="var-description">: The crawler-ID of the crawling-process that should be resumed.                         (see <a href="../phpcrawl/PHPCrawler.html#methodgetCrawlerId">getCrawlerId()</a>)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAggressiveLinkExtraction" id="setAggressiveLinkExtraction"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAggressiveLinkExtraction</span> (line <span class="line-number">1488</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias for enableAggressiveLinkSearch()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> Please use enableAggressiveLinkSearch()</li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAggressiveLinkExtraction
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetConnectionTimeout" id="setConnectionTimeout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setConnectionTimeout</span> (line <span class="line-number">1640</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the timeout in seconds for connection tries to hosting webservers.</p>
+<p class="description"><p>If the the connection to a host can't be established within the given time, the  request will be aborted.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setConnectionTimeout
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$timeout</span><span class="var-description">: The timeout in seconds, the default-value is 5 seconds.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetContentSizeLimit" id="setContentSizeLimit"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setContentSizeLimit</span> (line <span class="line-number">1402</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the content-size-limit for content the crawler should receive from documents.</p>
+<p class="description"><p>If the crawler is receiving the content of a page or file and the contentsize-limit is reached, the crawler stops receiving content  from this page or file.</p><p>Please note that the crawler can only find links in the received portion of a document.</p><p>The default-value is 0 (no limit).</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 5 Limit-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setContentSizeLimit
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$bytes</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$bytes</span><span class="var-description">: The limit in bytes.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCookieHandling" id="setCookieHandling"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCookieHandling</span> (line <span class="line-number">1455</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias for enableCookieHandling()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> Please use enableCookieHandling()</li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCookieHandling
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFollowMode" id="setFollowMode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFollowMode</span> (line <span class="line-number">1148</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the basic follow-mode of the crawler.</p>
+<p class="description"><p>The following list explains the supported follow-modes:</p><p><strong>0 - The crawler will follow EVERY link, even if the link leads to a different host or domain.</strong>  If you choose this mode, you really should set a limit to the crawling-process (see limit-options),  otherwise the crawler maybe will crawl the whole WWW!</p><p><strong>1 - The crawler only follow links that lead to the same domain like the one in the root-url.</strong>  E.g. if the root-url (setURL()) is &quot;http://www.foo.com&quot;, the crawler will follow links to &quot;http://www.foo.com/...&quot;  and &quot;http://bar.foo.com/...&quot;, but not to &quot;http://www.another-domain.com/...&quot;.</p><p><strong>2 - The crawler will only follow links that lead to the same host like the one in the root-url.</strong>  E.g. if the root-url (setURL()) is &quot;http://www.foo.com&quot;, the crawler will ONLY follow links to &quot;http://www.foo.com/...&quot;, but not  to &quot;http://bar.foo.com/...&quot; and &quot;http://www.another-domain.com/...&quot;. <strong>This is the default mode.</strong></p><p><strong>3 - The crawler only follows links to pages or files located in or under the same path like the one of the root-url.</strong>  E.g. if the root-url is &quot;http://www.foo.com/bar/index.html&quot;, the crawler will follow links to &quot;http://www.foo.com/bar/page.html&quot; and  &quot;http://www.foo.com/bar/path/index.html&quot;, but not links to &quot;http://www.foo.com/page.html&quot;.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setFollowMode
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$follow_mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$follow_mode</span><span class="var-description">: The basic follow-mode for the crawling-process (0, 1, 2 or 3).</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFollowRedirects" id="setFollowRedirects"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFollowRedirects</span> (line <span class="line-number">1095</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Defines whether the crawler should follow redirects sent with headers by a webserver or not.</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setFollowRedirects
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span><span class="var-description">: If TRUE, the crawler will follow header-redirects.                     The default-value is TRUE.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFollowRedirectsTillContent" id="setFollowRedirectsTillContent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFollowRedirectsTillContent</span> (line <span class="line-number">1117</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Defines whether the crawler should follow HTTP-redirects until first content was found, regardless of defined filter-rules and follow-modes.</p>
+<p class="description"><p>Sometimes, when requesting an URL, the first thing the webserver does is sending a redirect to  another location, and sometimes the server of this new location is sending a redirect again  (and so on).  So at least its possible that you find the expected content on a totally different host  as expected.</p><p>If you set this option to TRUE, the crawler will follow all these redirects until it finds some content.  If content finally was found, the root-url of the crawling-process will be set to this url and all  defined options (folllow-mode, filter-rules etc.) will relate to it from now on.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFollowRedirectsTillContent
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span><span class="var-description">: If TRUE, the crawler will follow redirects until content was finally found.                    Defaults to TRUE.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLinkExtractionTags" id="setLinkExtractionTags"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setLinkExtractionTags</span> (line <span class="line-number">1508</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the list of html-tags the crawler should search for links in.</p>
+<p class="description"><p>By default the crawler searches for links in the following html-tags: href, src, url, location, codebase, background, data, profile, action and open.  As soon as the list is set manually, this default list will be overwritten completly.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line"><span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetLinkExtractionTags">setLinkExtractionTags</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;href&quot;</span><span class="src-sym">,&nbsp;</span><span class="src-str">&quot;src&quot;</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+</ol></div>  This setting lets the crawler search for links (only) in &quot;href&quot; and &quot;src&quot;-tags.</p><p>Note: Reducing the number of tags in this list will improve the crawling-performance (a little).</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 6 Linkfinding settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setLinkExtractionTags
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tag_array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tag_array</span><span class="var-description">: Numeric array containing the tags.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPageLimit" id="setPageLimit"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPageLimit</span> (line <span class="line-number">1379</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets a limit to the number of pages/files the crawler should follow.</p>
+<p class="description"><p>If the limit is reached, the crawler stops the crawling-process. The default-value is 0 (no limit).</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 5 Limit-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setPageLimit
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$limit</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$only_count_received_documents</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$limit</span><span class="var-description">: The limit, set to 0 for no limit (default value).</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$only_count_received_documents</span><span class="var-description">: OPTIONAL.                                             TRUE means that only documents the crawler received will be counted.                                             FALSE means that ALL followed and requested pages/files will be counted, even if the content wasn't be received.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPort" id="setPort"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPort</span> (line <span class="line-number">1038</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the port to connect to for crawling the starting-url set in setUrl().</p>
+<p class="description"><p>The default port is 80.</p><p>Note:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$cralwer</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetURL">setURL</a><span class="src-sym">(</span><span class="src-str">&quot;http://www.foo.com&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetPort">setPort</a><span class="src-sym">(</span><span class="src-num">443</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  effects the same as</p><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$cralwer</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetURL">setURL</a><span class="src-sym">(</span><span class="src-str">&quot;http://www.foo.com:443&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setPort
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$port</span><span class="var-description">: The port</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetProxy" id="setProxy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setProxy</span> (line <span class="line-number">1624</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Assigns a proxy-server the crawler should use for all HTTP-Requests.</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setProxy
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$proxy_host</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$proxy_port</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$proxy_username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$proxy_password</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$proxy_host</span><span class="var-description">: Hostname or IP of the proxy-server</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$proxy_port</span><span class="var-description">: Port of the proxy-server</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$proxy_username</span><span class="var-description">: Optional. The username for proxy-authentication or NULL if no authentication is required.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$proxy_password</span><span class="var-description">: Optional. The password for proxy-authentication or NULL if no authentication is required.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetStreamTimeout" id="setStreamTimeout"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setStreamTimeout</span> (line <span class="line-number">1664</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the timeout in seconds for waiting for data on an established server-connection.</p>
+<p class="description"><p>If the connection to a server was be etablished but the server doesnt't send data anymore without  closing the connection, the crawler will wait the time given in timeout and then close the connection.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setStreamTimeout
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$timeout</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$timeout</span><span class="var-description">: The timeout in seconds, the default-value is 2 seconds.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTmpFile" id="setTmpFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTmpFile</span> (line <span class="line-number">1313</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Has no function anymore.</p>
+<p class="description"><p>Please use setWorkingDirectory()</p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> This method has no function anymore since v 0.8.</li>
+				<li><span class="field">section:</span> 11 Deprecated</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTmpFile
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tmp_file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tmp_file</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTrafficLimit" id="setTrafficLimit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTrafficLimit</span> (line <span class="line-number">1419</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets a limit to the number of bytes the crawler should receive alltogether during crawling-process.</p>
+<p class="description"><p>If the limit is reached, the crawler stops the crawling-process.  The default-value is 0 (no limit).</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 5 Limit-settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setTrafficLimit
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$bytes</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$complete_requested_files</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$bytes</span><span class="var-description">: Maximum number of bytes</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$complete_requested_files</span><span class="var-description">: This parameter has no function anymore!</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetURL" id="setURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setURL</span> (line <span class="line-number">1006</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the URL of the first page the crawler should crawl (root-page).</p>
+<p class="description"><p>The given url may contain the protocol (http://www.foo.com or https://www.foo.com), the port (http://www.foo.com:4500/index.php)  and/or basic-authentication-data (http://loginname:passwd@www.foo.com)</p><p>This url has to be set before calling the <a href="../phpcrawl/PHPCrawler.html#methodgo">go()</a>-method (of course)!  If this root-page doesn't contain any further links, the crawling-process will stop immediately.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: The URL</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUrlCacheType" id="setUrlCacheType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUrlCacheType</span> (line <span class="line-number">1736</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Defines what type of cache will be internally used for caching URLs.</p>
+<p class="description"><p>Currently phpcrawl is able to use a in-memory-cache or a SQlite-database-cache for  caching/storing found URLs internally.</p><p>The memory-cache (<a href="../phpcrawl-enums/PHPCrawlerUrlCacheTypes.html">PHPCrawlerUrlCacheTypes</a>::URLCACHE_MEMORY) is recommended for spidering small to medium websites.  It provides better performance, but the php-memory-limit may be hit when too many URLs get added to the cache.  This is the default-setting.</p><p>The SQlite-cache (<a href="../phpcrawl-enums/PHPCrawlerUrlCacheTypes.html">PHPCrawlerUrlCacheTypes</a>::URLCACHE_SQLite) is recommended for spidering huge websites.  URLs get cached in a SQLite-database-file, so the cache only is limited by available harddisk-space.  To increase performance of the SQLite-cache you may set it's location to a shared-memory device like &quot;/dev/shm/&quot;  by using the <a href="../phpcrawl/PHPCrawler.html#methodsetWorkingDirectory">setWorkingDirectory()</a>-method.</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetUrlCacheType">setUrlCacheType</a><span class="src-sym">(</span><span class="src-id"><a href="../phpcrawl-enums/PHPCrawlerUrlCacheTypes.html">PHPCrawlerUrlCacheTypes</a></span><span class="src-sym">::</span><span class="src-id">URLCACHE_SQLITE</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetWorkingDirectory">setWorkingDirectory</a><span class="src-sym">(</span><span class="src-str">&quot;/dev/shm/&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p><p><strong>NOTE:</strong> When using phpcrawl in multi-process-mode (<a href="../phpcrawl/PHPCrawler.html#methodgoMultiProcessed">goMultiProcessed()</a>), the cache-type is automatically set  to PHPCrawlerUrlCacheTypes::URLCACHE_SQLITE.</p></p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setUrlCacheType
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$url_cache_type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$url_cache_type</span><span class="var-description">: <p>1 -&gt; in-memory-cache (default setting)                             2 -&gt; SQlite-database-cache</p><p>Or one of the <a href="../phpcrawl-enums/PHPCrawlerUrlCacheTypes.html">PHPCrawlerUrlCacheTypes</a>::URLCACHE..-constants.</p></span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUserAgentString" id="setUserAgentString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUserAgentString</span> (line <span class="line-number">1560</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the &quot;User-Agent&quot; identification-string that will be send with HTTP-requests.</p>
+	<ul class="tags">
+				<li><span class="field">section:</span> 10 Other settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUserAgentString
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$user_agent</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user_agent</span><span class="var-description">: The user-agent-string. The default-value is &quot;PHPCrawl&quot;.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetWorkingDirectory" id="setWorkingDirectory"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setWorkingDirectory</span> (line <span class="line-number">1604</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the working-directory the crawler should use for storing temporary data.</p>
+<p class="description"><p>Every instance of the crawler needs and creates a temporary directory for storing some  internal data.</p><p>This setting defines which base-directory the crawler will use to store the temporary  directories in. By default, the crawler uses the systems temp-directory as working-directory.  (i.e. &quot;/tmp/&quot; on linux-systems)</p><p>All temporary directories created in the working-directory will be deleted automatically  after a crawling-process has finished.</p><p>NOTE: To speed up the performance of a crawling-process (especially when using the  SQLite-urlcache), try to set a mounted shared-memory device as working-direcotry  (i.e. &quot;/dev/shm/&quot; on Debian/Ubuntu-systems).</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$crawler</span><span class="src-sym">-&gt;</span><a href="../phpcrawl/PHPCrawler.html#methodsetWorkingDirectory">setWorkingDirectory</a><span class="src-sym">(</span><span class="src-str">&quot;/tmp/&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE on success, otherwise false.</li>
+				<li><span class="field">section:</span> 1 Basic settings</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setWorkingDirectory
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$directory</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$directory</span><span class="var-description">: The working-directory</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstarControllerProcessLoop" id="starControllerProcessLoop"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">starControllerProcessLoop</span> (line <span class="line-number">475</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Starts the loop of the controller-process (main-process).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			starControllerProcessLoop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstartChildProcessLoop" id="startChildProcessLoop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">startChildProcessLoop</span> (line <span class="line-number">530</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Starts the loop of a child-process.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			startChildProcessLoop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:49 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerHTTPRequest</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerHTTPRequest</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class for performing HTTP-requests.</p>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---PHPCrawlerHTTPRequest.class.php.html">/libs/PHPCrawler/PHPCrawlerHTTPRequest.class.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																																																																																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$content_size_limit" title="details" class="var-name">$content_size_limit</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$cookie_array" title="details" class="var-name">$cookie_array</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$data_transfer_time" title="details" class="var-name">$data_transfer_time</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerDNSCache.html">PHPCrawlerDNSCache</a></span>
+					<a href="#$DNSCache" title="details" class="var-name">$DNSCache</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$global_traffic_count" title="details" class="var-name">$global_traffic_count</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$header_check_callback_function" title="details" class="var-name">$header_check_callback_function</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$lastResponseHeader" title="details" class="var-name">$lastResponseHeader</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerLinkFinder.html">PHPCrawlerLinkFinder</a></span>
+					<a href="#$LinkFinder" title="details" class="var-name">$LinkFinder</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$linksearch_content_types" title="details" class="var-name">$linksearch_content_types</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$post_data" title="details" class="var-name">$post_data</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$proxy" title="details" class="var-name">$proxy</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$receive_content_types" title="details" class="var-name">$receive_content_types</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$receive_to_file_content_types" title="details" class="var-name">$receive_to_file_content_types</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$socket" title="details" class="var-name">$socket</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$socketConnectTimeout" title="details" class="var-name">$socketConnectTimeout</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$socketReadTimeout" title="details" class="var-name">$socketReadTimeout</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$tmpFile" title="details" class="var-name">$tmpFile</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>
+					<a href="#$UrlDescriptor" title="details" class="var-name">$UrlDescriptor</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$url_parts" title="details" class="var-name">$url_parts</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$userAgentString" title="details" class="var-name">$userAgentString</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">PHPCrawlerHTTPRequest</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addCookie" title="details" class="method-name">addCookie</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addCookieDescriptor" title="details" class="method-name">addCookieDescriptor</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerCookieDescriptor.html">PHPCrawlerCookieDescriptor</a></span>&nbsp;<span class="var-name">$Cookie</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addCookieDescriptors" title="details" class="method-name">addCookieDescriptors</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$cookies</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addLinkSearchContentType" title="details" class="method-name">addLinkSearchContentType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addPostData" title="details" class="method-name">addPostData</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addReceiveContentType" title="details" class="method-name">addReceiveContentType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#addStreamToFileContentType" title="details" class="method-name">addStreamToFileContentType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#buildCookieHeader" title="details" class="method-name">buildCookieHeader</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#buildPostContent" title="details" class="method-name">buildPostContent</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#buildRequestHeader" title="details" class="method-name">buildRequestHeader</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clearCookies" title="details" class="method-name">clearCookies</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clearPostData" title="details" class="method-name">clearPostData</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#decideRecevieContent" title="details" class="method-name">decideRecevieContent</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerResponseHeader.html">PHPCrawlerResponseHeader</a></span>&nbsp;<span class="var-name">$responseHeader</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#decideStreamToFile" title="details" class="method-name">decideStreamToFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$response_header</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#enableAggressiveLinkSearch" title="details" class="method-name">enableAggressiveLinkSearch</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getGlobalTrafficCount" title="details" class="method-name">getGlobalTrafficCount</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#openSocket" title="details" class="method-name">openSocket</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">&$error_code</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$error_string</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#prepareHTTPRequestQuery" title="details" class="method-name">prepareHTTPRequestQuery</a>
+											(<span class="var-type">stirng</span>&nbsp;<span class="var-name">$query</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#readResponseContent" title="details" class="method-name">readResponseContent</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$stream_to_file</span> = <span class="var-default">false</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">&$error_code</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">&$error_string</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">&$document_received_completely</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">&$bytes_received</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#readResponseHeader" title="details" class="method-name">readResponseHeader</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">&$error_code</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$error_string</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">A</span>
+										<a href="#sendRequest" title="details" class="method-name">sendRequest</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#sendRequestHeader" title="details" class="method-name">sendRequestHeader</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$request_header_lines</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setBasicAuthentication" title="details" class="method-name">setBasicAuthentication</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$username</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setContentSizeLimit" title="details" class="method-name">setContentSizeLimit</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$bytes</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setFindRedirectURLs" title="details" class="method-name">setFindRedirectURLs</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHeaderCheckCallbackFunction" title="details" class="method-name">setHeaderCheckCallbackFunction</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$obj</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$method_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#setLinkExtractionTags" title="details" class="method-name">setLinkExtractionTags</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tag_array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setProxy" title="details" class="method-name">setProxy</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$proxy_host</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$proxy_port</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$proxy_username</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$proxy_password</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setTmpFile" title="details" class="method-name">setTmpFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$tmp_file</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUrl" title="details" class="method-name">setUrl</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$content_size_limit" id="$content_size_limit"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$content_size_limit</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">30</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Limit for content-size to receive</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The kimit n bytes</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$cookie_array" id="$cookie_array"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$cookie_array</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">113</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array containing cookies to send with the request</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$data_transfer_time" id="$data_transfer_time"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$data_transfer_time</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The time it took te receive data-packets for the request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$DNSCache" id="$DNSCache"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerDNSCache.html">PHPCrawlerDNSCache</a></span>
+			<span class="var-name">$DNSCache</span>
+						(line <span class="line-number">94</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">DNS-cache</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$global_traffic_count" id="$global_traffic_count"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$global_traffic_count</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">37</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Global counter for traffic this instance of the HTTPRequest-class caused.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$header_check_callback_function" id="$header_check_callback_function"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$header_check_callback_function</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">134</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$lastResponseHeader" id="$lastResponseHeader"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$lastResponseHeader</span>
+						(line <span class="line-number">106</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The last response-header this request-instance received.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$LinkFinder" id="$LinkFinder"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerLinkFinder.html">PHPCrawlerLinkFinder</a></span>
+			<span class="var-name">$LinkFinder</span>
+						(line <span class="line-number">101</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Link-finder object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$linksearch_content_types" id="$linksearch_content_types"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$linksearch_content_types</span>
+			 = <span class="var-default">array(&quot;#text/html# i&quot;)</span>			(line <span class="line-number">66</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Contains all rules defining the content-types defining which documents shoud get checked for links.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Numeric array conatining the regex-rules</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$post_data" id="$post_data"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$post_data</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">120</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array containing POST-data to send with the request</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$proxy" id="$proxy"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$proxy</span>
+						(line <span class="line-number">127</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The proxy to use</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Array containing the keys &quot;proxy_host&quot;, &quot;proxy_port&quot;, &quot;proxy_username&quot;, &quot;proxy_password&quot;.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$receive_content_types" id="$receive_content_types"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$receive_content_types</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">51</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Contains all rules defining the content-types that should be received</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Numeric array conatining the regex-rules</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$receive_to_file_content_types" id="$receive_to_file_content_types"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$receive_to_file_content_types</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">59</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Contains all rules defining the content-types of pages/files that should be streamed directly to  a temporary file (instead of to memory)</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Numeric array conatining the regex-rules</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$socket" id="$socket"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$socket</span>
+						(line <span class="line-number">132</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The socket used for HTTP-requests</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$socketConnectTimeout" id="$socketConnectTimeout"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$socketConnectTimeout</span>
+			 = <span class="var-default"> 5</span>			(line <span class="line-number">18</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Timeout-value for socket-connection</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$socketReadTimeout" id="$socketReadTimeout"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$socketReadTimeout</span>
+			 = <span class="var-default"> 2</span>			(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Socket-read-timeout</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tmpFile" id="$tmpFile"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$tmpFile</span>
+			 = <span class="var-default"> &quot;phpcrawl.tmp&quot;</span>			(line <span class="line-number">73</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The TMP-File to use when a page/file should be streamed to file.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$UrlDescriptor" id="$UrlDescriptor"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>
+			<span class="var-name">$UrlDescriptor</span>
+						(line <span class="line-number">80</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The URL for the request as PHPCrawlerURLDescriptor-object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$url_parts" id="$url_parts"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$url_parts</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">87</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The parts of the URL for the request as returned by PHPCrawlerUtils::splitURL()</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$userAgentString" id="$userAgentString"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$userAgentString</span>
+			 = <span class="var-default"> &quot;PHPCrawl&quot;</span>			(line <span class="line-number">13</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The user-agent-string</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">136</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">PHPCrawlerHTTPRequest</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodaddCookie" id="addCookie"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addCookie</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a cookie to send with the request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addCookie
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Cookie-name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: Cookie-value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddCookieDescriptor" id="addCookieDescriptor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addCookieDescriptor</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a cookie to send with the request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addCookieDescriptor
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerCookieDescriptor.html">PHPCrawlerCookieDescriptor</a></span>&nbsp;<span class="var-name">$Cookie</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerCookieDescriptor.html">PHPCrawlerCookieDescriptor</a></span>
+				<span class="var-name">$Cookie</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddCookieDescriptors" id="addCookieDescriptors"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addCookieDescriptors</span> (line <span class="line-number">193</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a bunch of cookies to send with the request</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addCookieDescriptors
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$cookies</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$cookies</span><span class="var-description">: Numeric array containins cookies as PHPCrawlerCookieDescriptor-objects</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddLinkSearchContentType" id="addLinkSearchContentType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addLinkSearchContentType</span> (line <span class="line-number">995</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decide what kind of documents should get  checked for links in (regarding their content-type)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the rule was successfully added</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addLinkSearchContentType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: Regular-expression defining the rule</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddPostData" id="addPostData"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addPostData</span> (line <span class="line-number">241</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds post-data to send with the request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addPostData
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddReceiveContentType" id="addReceiveContentType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addReceiveContentType</span> (line <span class="line-number">909</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decides which pages or files - regarding their content-type - should be received</p>
+<p class="description"><p>If the content-type of a requested document doesn't match with the given rules, the request will be aborted after the header  was received.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the rule was added to the list.               FALSE if the given regex is not valid.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addReceiveContentType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: The rule as a regular-expression</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddStreamToFileContentType" id="addStreamToFileContentType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addStreamToFileContentType</span> (line <span class="line-number">929</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decides what types of content should be streamed diretly to the temporary file.</p>
+<p class="description"><p>If a content-type of a page or file matches with one of these rules, the content will be streamed directly into the temporary file  given in setTmpFile() without claiming local RAM.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the rule was added to the list and the regex is valid.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addStreamToFileContentType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: The rule as a regular-expression</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuildCookieHeader" id="buildCookieHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildCookieHeader</span> (line <span class="line-number">836</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds the cookie-header-part for the header to send.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The cookie-header-part, i.e. &quot;Cookie: test=bla; palimm=palaber&quot;</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			buildCookieHeader
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuildPostContent" id="buildPostContent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildPostContent</span> (line <span class="line-number">813</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds the post-content from the postdata-array for the header to send with the request (MIME-style)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Numeric array containing the lines of the POST-part for the header</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			buildPostContent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuildRequestHeader" id="buildRequestHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildRequestHeader</span> (line <span class="line-number">701</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds the request-header from the given settings.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Numeric array containing the lines of the request-header</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			buildRequestHeader
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodclearCookies" id="clearCookies"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">clearCookies</span> (line <span class="line-number">205</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes all cookies to send with the request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clearCookies
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodclearPostData" id="clearPostData"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">clearPostData</span> (line <span class="line-number">249</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes all post-data to send with the request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clearPostData
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddecideRecevieContent" id="decideRecevieContent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">decideRecevieContent</span> (line <span class="line-number">863</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the content of this page/file should be received (based on the content-type  and the applied rules)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the content should be received</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			decideRecevieContent
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerResponseHeader.html">PHPCrawlerResponseHeader</a></span>&nbsp;<span class="var-name">$responseHeader</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerResponseHeader.html">PHPCrawlerResponseHeader</a></span>
+				<span class="var-name">$responseHeader</span><span class="var-description">: The response-header as an PHPCrawlerResponseHeader-object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddecideStreamToFile" id="decideStreamToFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">decideStreamToFile</span> (line <span class="line-number">883</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the content of this page/file should be streamed directly to file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the content should be streamed to TMP-file</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			decideStreamToFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$response_header</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$response_header</span><span class="var-description">: The response-header</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenableAggressiveLinkSearch" id="enableAggressiveLinkSearch"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableAggressiveLinkSearch</span> (line <span class="line-number">278</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enables/disables aggresive linksearch</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			enableAggressiveLinkSearch
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetGlobalTrafficCount" id="getGlobalTrafficCount"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getGlobalTrafficCount</span> (line <span class="line-number">983</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the global traffic this instance of the HTTPRequest-class caused so far.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The traffic in bytes.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getGlobalTrafficCount
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodopenSocket" id="openSocket"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">openSocket</span> (line <span class="line-number">426</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Opens the socket to the host.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if socket could be opened, otherwise FALSE.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			openSocket
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">&$error_code</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$error_string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">&$error_code</span><span class="var-description">: Error-code by referenct if an error occured.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$error_string</span><span class="var-description">: Error-string by reference</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprepareHTTPRequestQuery" id="prepareHTTPRequestQuery"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">prepareHTTPRequestQuery</span> (line <span class="line-number">777</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prepares the given HTTP-query-string for the HTTP-request.</p>
+<p class="description"><p></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			prepareHTTPRequestQuery
+		</span>
+					(<span class="var-type">stirng</span>&nbsp;<span class="var-name">$query</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">stirng</span>
+				<span class="var-name">$query</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreadResponseContent" id="readResponseContent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">readResponseContent</span> (line <span class="line-number">590</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reads the response-content.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The response-content/source. May be emtpy if an error ocdured or data was streamed to the tmp-file.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			readResponseContent
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$stream_to_file</span> = <span class="var-default">false</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">&$error_code</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">&$error_string</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">&$document_received_completely</span>, <span class="var-type">&string</span>&nbsp;<span class="var-name">&$bytes_received</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$stream_to_file</span><span class="var-description">: If TRUE, the content will be streamed diretly to the temporary file and                                 this method will not return the content as a string.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">&$error_code</span><span class="var-description">: Error-code by reference if an error occured.</span>			</li>
+					<li>
+				<span class="var-type">&string</span>
+				<span class="var-name">&$error_string</span><span class="var-description">: Error-string by reference</span>			</li>
+					<li>
+				<span class="var-type">&string</span>
+				<span class="var-name">&$document_received_completely</span><span class="var-description">: Flag indicatign whether the content was received completely passed by reference</span>			</li>
+					<li>
+				<span class="var-type">&string</span>
+				<span class="var-name">&$bytes_received</span><span class="var-description">: Number of bytes received, passed by reference</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreadResponseHeader" id="readResponseHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">readResponseHeader</span> (line <span class="line-number">511</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reads the response-header.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The response-header or NULL if an error occured</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			readResponseHeader
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">&$error_code</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$error_string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">&$error_code</span><span class="var-description">: Error-code by reference if an error occured.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$error_string</span><span class="var-description">: Error-string by reference</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsendRequest" id="sendRequest"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">sendRequest</span> (line <span class="line-number">296</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends the HTTP-request and receives the page/file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> PHPCrawlerDocumentInfo-object containing all information about the received page/file</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">A</span>
+		<span class="method-name">
+			sendRequest
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsendRequestHeader" id="sendRequestHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">sendRequestHeader</span> (line <span class="line-number">490</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Send the request-header.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sendRequestHeader
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$request_header_lines</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$request_header_lines</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBasicAuthentication" id="setBasicAuthentication"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBasicAuthentication</span> (line <span class="line-number">266</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets basic-authentication login-data for protected URLs.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBasicAuthentication
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$username</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$username</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetContentSizeLimit" id="setContentSizeLimit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setContentSizeLimit</span> (line <span class="line-number">968</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the size-limit in bytes for content the request should receive.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setContentSizeLimit
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$bytes</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$bytes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFindRedirectURLs" id="setFindRedirectURLs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFindRedirectURLs</span> (line <span class="line-number">229</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specifies whether redirect-links set in http-headers should get searched for.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setFindRedirectURLs
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHeaderCheckCallbackFunction" id="setHeaderCheckCallbackFunction"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHeaderCheckCallbackFunction</span> (line <span class="line-number">286</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHeaderCheckCallbackFunction
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$obj</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$method_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$obj</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$method_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLinkExtractionTags" id="setLinkExtractionTags"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setLinkExtractionTags</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the html-tags from which to extract/find links from.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setLinkExtractionTags
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tag_array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tag_array</span><span class="var-description">: Numeric array containing the tags, i.g. array(&quot;href&quot;, &quot;src&quot;, &quot;url&quot;, ...)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetProxy" id="setProxy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setProxy</span> (line <span class="line-number">254</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setProxy
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$proxy_host</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$proxy_port</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$proxy_username</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$proxy_password</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$proxy_host</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$proxy_port</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$proxy_username</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$proxy_password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTmpFile" id="setTmpFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTmpFile</span> (line <span class="line-number">945</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the temporary file to use when content of found documents should be streamed directly into a temporary file.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTmpFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$tmp_file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tmp_file</span><span class="var-description">: The TMP-file to use.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUrl" id="setUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUrl</span> (line <span class="line-number">158</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the URL for the request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUrl
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>
+				<span class="var-name">$UrlDescriptor</span><span class="var-description">: An PHPCrawlerURLDescriptor-object containing the URL to request</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

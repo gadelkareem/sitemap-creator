@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerURLFilter</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerURLFilter</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class for filtering URLs by given filter-rules.</p>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---PHPCrawlerURLFilter.class.php.html">/libs/PHPCrawler/PHPCrawlerURLFilter.class.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																								<div class="var-title">
+					<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+					<a href="#$CurrentDocumentInfo" title="details" class="var-name">$CurrentDocumentInfo</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$general_follow_mode" title="details" class="var-name">$general_follow_mode</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$obey_nofollow_tags" title="details" class="var-name">$obey_nofollow_tags</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$starting_url" title="details" class="var-name">$starting_url</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$starting_url_parts" title="details" class="var-name">$starting_url_parts</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$url_filter_rules" title="details" class="var-name">$url_filter_rules</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$url_follow_rules" title="details" class="var-name">$url_follow_rules</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#keepRedirectUrls" title="details" class="method-name">keepRedirectUrls</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$DocumentInfo</span>)
+									</div>
+																								
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addURLFilterRule" title="details" class="method-name">addURLFilterRule</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addURLFilterRules" title="details" class="method-name">addURLFilterRules</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex_array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addURLFollowRule" title="details" class="method-name">addURLFollowRule</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#filterUrls" title="details" class="method-name">filterUrls</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$DocumentInfo</span>)
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setBaseURL" title="details" class="method-name">setBaseURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$starting_url</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#urlMatchesRules" title="details" class="method-name">urlMatchesRules</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$CurrentDocumentInfo" id="$CurrentDocumentInfo"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+			<span class="var-name">$CurrentDocumentInfo</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">62</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Current PHPCrawlerDocumentInfo-object of the current document</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$general_follow_mode" id="$general_follow_mode"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$general_follow_mode</span>
+			 = <span class="var-default"> 2</span>			(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The general follow-mode of the crawler</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> <p>The follow-mode</p><p><ol><li>-&gt; follow every links</li><li>-&gt; stay in domain</li><li>-&gt; stay in host</li><li>-&gt; stay in path</li></ol></p></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$obey_nofollow_tags" id="$obey_nofollow_tags"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$obey_nofollow_tags</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Defines whether nofollow-tags should get obeyed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$starting_url" id="$starting_url"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$starting_url</span>
+			 = <span class="var-default"> &quot;&quot;</span>			(line <span class="line-number">15</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The full qualified and normalized URL the crawling-prpocess was started with.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$starting_url_parts" id="$starting_url_parts"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$starting_url_parts</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">22</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The URL-parts of the starting-url.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The URL-parts as returned by PHPCrawlerUtils::splitURL()</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$url_filter_rules" id="$url_filter_rules"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$url_filter_rules</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">36</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array containing regex-rules for URLs that should NOT be followed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$url_follow_rules" id="$url_follow_rules"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$url_follow_rules</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array containing regex-rules for URLs that should be followed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodkeepRedirectUrls" id="keepRedirectUrls"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method keepRedirectUrls</span> (line <span class="line-number">107</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filters out all non-redirect-URLs from the URLs given in the PHPCrawlerDocumentInfo-object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			keepRedirectUrls
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$DocumentInfo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+				<span class="var-name">$DocumentInfo</span><span class="var-description">: PHPCrawlerDocumentInfo-object containing all found links of the current document.</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="methodaddURLFilterRule" id="addURLFilterRule"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURLFilterRule</span> (line <span class="line-number">217</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a rule to the list of rules that decide which URLs found on a page should be ignored by the crawler.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addURLFilterRule
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddURLFilterRules" id="addURLFilterRules"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURLFilterRules</span> (line <span class="line-number">231</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a bunch of rules to the list of rules that decide which URLs found on a page should be ignored by the crawler.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addURLFilterRules
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex_array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex_array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddURLFollowRule" id="addURLFollowRule"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURLFollowRule</span> (line <span class="line-number">203</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addURLFollowRule
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$regex</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$regex</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfilterUrls" id="filterUrls"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">filterUrls</span> (line <span class="line-number">82</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filters the given URLs (contained in the given PHPCrawlerDocumentInfo-object) by the given rules.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			filterUrls
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>&nbsp;<span class="var-name">$DocumentInfo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerDocumentInfo.html">PHPCrawlerDocumentInfo</a></span>
+				<span class="var-name">$DocumentInfo</span><span class="var-description">: PHPCrawlerDocumentInfo-object containing all found links of the current document.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBaseURL" id="setBaseURL"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBaseURL</span> (line <span class="line-number">69</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the base-URL of the crawling process some rules relate to</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBaseURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$starting_url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$starting_url</span><span class="var-description">: The URL the crawling-process was started with.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodurlMatchesRules" id="urlMatchesRules"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">urlMatchesRules</span> (line <span class="line-number">125</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a given URL matches the rules.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE if the URL matches the defined rules.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			urlMatchesRules
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: The URL as a PHPCrawlerURLDescriptor-object</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

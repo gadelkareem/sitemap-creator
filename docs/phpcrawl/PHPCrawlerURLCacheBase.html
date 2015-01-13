@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCrawlerURLCacheBase</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCrawlerURLCacheBase</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Abstract baseclass for implemented URL-caching classes.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_libs---PHPCrawler---UrlCache---PHPCrawlerURLCacheBase.class.php.html">/libs/PHPCrawler/UrlCache/PHPCrawlerURLCacheBase.class.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html">PHPCrawlerSQLiteURLCache</a></td>
+					<td>
+											Class for caching/storing URLs/links in a SQLite-database-file.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpcrawl/PHPCrawlerMemoryURLCache.html">PHPCrawlerMemoryURLCache</a></td>
+					<td>
+											Class for caching/storing URLs/links in memory.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<a href="#URLHASH_NONE" title="details" class="const-name">URLHASH_NONE</a> = 					<span class="var-type"> 3</span>
+
+				</div>
+								<div class="const-title">
+					<a href="#URLHASH_RAWLINK" title="details" class="const-name">URLHASH_RAWLINK</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<a href="#URLHASH_URL" title="details" class="const-name">URLHASH_URL</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$url_distinct_property" title="details" class="var-name">$url_distinct_property</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$url_priorities" title="details" class="var-name">$url_priorities</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addLinkPriorities" title="details" class="method-name">addLinkPriorities</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$priority_array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addLinkPriority" title="details" class="method-name">addLinkPriority</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$level</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addURL" title="details" class="method-name">addURL</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addURLs" title="details" class="method-name">addURLs</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$urls</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#cleanup" title="details" class="method-name">cleanup</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clear" title="details" class="method-name">clear</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#containsURLs" title="details" class="method-name">containsURLs</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAllURLs" title="details" class="method-name">getAllURLs</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getDistinctURLHash" title="details" class="method-name">getDistinctURLHash</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">PhpCrawlerURLDescriptor</span>
+										<a href="#getNextUrl" title="details" class="method-name">getNextUrl</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getUrlPriority" title="details" class="method-name">getUrlPriority</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#markUrlAsFollowed" title="details" class="method-name">markUrlAsFollowed</a>
+											(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#purgeCache" title="details" class="method-name">purgeCache</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$url_distinct_property" id="$url_distinct_property"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$url_distinct_property</span>
+			 = <span class="var-default"> self::URLHASH_URL</span>			(line <span class="line-number">17</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Defines which property of an URL is used to ensure that each URL is only cached once.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> One of the URLHASH_.. constants</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$url_priorities" id="$url_priorities"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$url_priorities</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">10</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddLinkPriorities" id="addLinkPriorities"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addLinkPriorities</span> (line <span class="line-number">133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a bunch of link-priorities</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addLinkPriorities
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$priority_array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$priority_array</span><span class="var-description">: Numeric array containing the subkeys &quot;match&quot; and &quot;level&quot;</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddLinkPriority" id="addLinkPriority"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addLinkPriority</span> (line <span class="line-number">118</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a Link-Priority-Level</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addLinkPriority
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$level</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$level</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddURL" id="addURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURL</span> (line <span class="line-number">47</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds an URL to the url-cache</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addURL
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>
+				<span class="var-name">$UrlDescriptor</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodaddURL">PHPCrawlerSQLiteURLCache::addURL()</a>
+								: Adds an URL to the url-cache
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodaddURL">PHPCrawlerMemoryURLCache::addURL()</a>
+								: Adds an URL to the url-cache
+							</li>
+				</ul>
+	</div>
+<a name="methodaddURLs" id="addURLs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addURLs</span> (line <span class="line-number">54</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds an bunch of URLs to the url-cache</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addURLs
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$urls</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$urls</span><span class="var-description">: A numeric array containing the URLs as PHPCrawlerURLDescriptor-objects</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodaddURLs">PHPCrawlerSQLiteURLCache::addURLs()</a>
+								: Adds an bunch of URLs to the url-cache
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodaddURLs">PHPCrawlerMemoryURLCache::addURLs()</a>
+								: Adds an bunch of URLs to the url-cache
+							</li>
+				</ul>
+	</div>
+<a name="methodcleanup" id="cleanup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">cleanup</span> (line <span class="line-number">73</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Do cleanups after the cache is not needed anymore</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			cleanup
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodcleanup">PHPCrawlerSQLiteURLCache::cleanup()</a>
+								: Cleans up the cache after is it not needed anymore.
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodcleanup">PHPCrawlerMemoryURLCache::cleanup()</a>
+								: Has no function in this class.
+							</li>
+				</ul>
+	</div>
+<a name="methodclear" id="clear"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">clear</span> (line <span class="line-number">40</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes all URLs and all priority-rules from the URL-cache.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clear
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodclear">PHPCrawlerSQLiteURLCache::clear()</a>
+								: Removes all URLs and all priority-rules from the URL-cache.
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodclear">PHPCrawlerMemoryURLCache::clear()</a>
+								: Removes all URLs and all priority-rules from the URL-cache.
+							</li>
+				</ul>
+	</div>
+<a name="methodcontainsURLs" id="containsURLs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">containsURLs</span> (line <span class="line-number">61</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether there are URLs left in the cache or not.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			containsURLs
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodcontainsURLs">PHPCrawlerSQLiteURLCache::containsURLs()</a>
+								: Checks whether there are URLs left in the cache that should be processed or not.
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodcontainsURLs">PHPCrawlerMemoryURLCache::containsURLs()</a>
+								: Checks whether there are URLs left in the cache or not.
+							</li>
+				</ul>
+	</div>
+<a name="methodgetAllURLs" id="getAllURLs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllURLs</span> (line <span class="line-number">35</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns all URLs currently cached in the URL-cache.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Numeric array containing all URLs as PHPCrawlerURLDescriptor-objects</li>
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAllURLs
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodgetAllURLs">PHPCrawlerSQLiteURLCache::getAllURLs()</a>
+								: Has no function in this class
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodgetAllURLs">PHPCrawlerMemoryURLCache::getAllURLs()</a>
+								: Returns all URLs currently cached in the URL-cache.
+							</li>
+				</ul>
+	</div>
+<a name="methodgetDistinctURLHash" id="getDistinctURLHash"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDistinctURLHash</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the distinct-hash for the given URL that ensures that no URLs a cached more than one time.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The hash or NULL if no distinct-hash should be used.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDistinctURLHash
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>
+				<span class="var-name">$UrlDescriptor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetNextUrl" id="getNextUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNextUrl</span> (line <span class="line-number">28</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the next URL from the cache that should be crawled.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">PhpCrawlerURLDescriptor</span>
+		<span class="method-name">
+			getNextUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodgetNextUrl">PHPCrawlerSQLiteURLCache::getNextUrl()</a>
+								: Returns the next URL from the cache that should be crawled.
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodgetNextUrl">PHPCrawlerMemoryURLCache::getNextUrl()</a>
+								: Returns the next URL from the cache that should be crawled.
+							</li>
+				</ul>
+	</div>
+<a name="methodgetUrlPriority" id="getUrlPriority"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUrlPriority</span> (line <span class="line-number">98</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the priority-level of the given URL</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getUrlPriority
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$url</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmarkUrlAsFollowed" id="markUrlAsFollowed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">markUrlAsFollowed</span> (line <span class="line-number">68</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Marks the given URL in the cache as &quot;followed&quot;</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			markUrlAsFollowed
+		</span>
+					(<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>&nbsp;<span class="var-name">$UrlDescriptor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpcrawl/PHPCrawlerURLDescriptor.html">PHPCrawlerURLDescriptor</a></span>
+				<span class="var-name">$UrlDescriptor</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodmarkUrlAsFollowed">PHPCrawlerSQLiteURLCache::markUrlAsFollowed()</a>
+								: Marks the given URL in the cache as &quot;followed&quot;
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodmarkUrlAsFollowed">PHPCrawlerMemoryURLCache::markUrlAsFollowed()</a>
+								: Has no function in this memory-cache.
+							</li>
+				</ul>
+	</div>
+<a name="methodpurgeCache" id="purgeCache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">purgeCache</span> (line <span class="line-number">78</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cleans/purges the URL-cache from inconsistent entries.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			purgeCache
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpcrawl/PHPCrawlerSQLiteURLCache.html#methodpurgeCache">PHPCrawlerSQLiteURLCache::purgeCache()</a>
+								: Cleans/purges the URL-cache from inconsistent entries.
+							</li>
+					<li>
+				<a href="../phpcrawl/PHPCrawlerMemoryURLCache.html#methodpurgeCache">PHPCrawlerMemoryURLCache::purgeCache()</a>
+								: Has no function in this class.
+							</li>
+				</ul>
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constURLHASH_NONE" id="URLHASH_NONE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">URLHASH_NONE</span>
+			 = <span class="const-default"> 3</span>
+			(line <span class="line-number">21</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constURLHASH_RAWLINK" id="URLHASH_RAWLINK"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">URLHASH_RAWLINK</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">20</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constURLHASH_URL" id="URLHASH_URL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<span class="const-title">
+			<span class="const-name">URLHASH_URL</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">19</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 20 Jan 2013 21:18:50 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>
